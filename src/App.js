@@ -1,9 +1,8 @@
-import './App.css';
-import Demo from "./components/Demo"
+import { RightSideBar } from "./components/RightSideBar/RightSideBar";
 function App() {
   return (
     <div className="App">
-     <Demo/>
+      <RightSideBar />
     </div>
   );
 }
