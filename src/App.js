@@ -1,11 +1,20 @@
 import LeftSection from "./components/leftSection/LeftSection";
+import { RightSideBar } from "./components/RightSideBar/RightSideBar";
+
+import "./App.css";
 
 function App() {
   return (
     <>
-      <LeftSection />
+      <div className="App">
+        <div className="main-content">
+          <LeftSection />
+          <RightSideBar />
+        </div>
+      </div>
     </>
   );
 }
+
 
 export default App;
