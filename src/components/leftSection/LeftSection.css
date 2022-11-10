@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+  position: fixed;
+  left: 0;
+  background-color: #fafafa;
+  height: 100vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* logo */
+.brand{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 15px 0;
+}
+
+.brand svg{
+  font-size: 2rem;
+  color: #34684c;
+}
+
+.brand span{
+  color: #38a830;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.brand .logo-text{
+  color: #4f5052;
+}
+
+.toggle{
+  display: none;
+}
+
+/* navigation menu */
+nav{
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+li{
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+}
+
+li svg{
+  font-size: 1.30rem;
+}
+
+li a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #4f5052;
+  font-size: 1.04rem;
+  font-weight: 400;
+}
+
+.active{
+  background-color: #38a830;
+}
+.active a{
+  color: #ffffff;
+  font-weight: 500;
+}
+
+

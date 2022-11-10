@@ -1,9 +1,9 @@
-import "./App.css";
+import LeftSection from "./components/leftSection/LeftSection";
 
 function App() {
   return (
     <>
-      
+      <LeftSection />
     </>
   );
 }
