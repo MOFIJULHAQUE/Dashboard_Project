@@ -64,9 +64,9 @@ li svg {
 li a {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 1rem;
   color: #4f5052;
-  font-size: 1.04rem;
+  font-size: 1.10rem;
   font-weight: 400;
 }
 

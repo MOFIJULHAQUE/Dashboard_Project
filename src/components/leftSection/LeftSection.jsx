@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 
 import { RiHandCoinLine } from "react-icons/ri";
-import { VscHome } from "react-icons/vsc";
-import { MdOutlineDashboard } from "react-icons/md";
-import { BsWallet } from "react-icons/bs";
-import { IoNotificationsOutline } from "react-icons/io5";
-import { BsQuestionCircle } from "react-icons/bs";
 import { FaBlog } from "react-icons/fa";
-import { MdOutlineSupportAgent } from "react-icons/md";
-import { MdOutlinePolicy } from "react-icons/md";
-import { BsInfoCircle } from "react-icons/bs";
+import {
+  MdOutlineHome,
+  MdOutlineDashboard,
+  MdOutlineAccountBalanceWallet,
+  MdOutlineNotificationsNone,
+  MdOutlineQuestionAnswer,
+  MdOutlineSupportAgent,
+  MdOutlinePolicy,
+  MdOutlineInfo
+} from "react-icons/md";
 
-import '../leftSection/LeftSection.css'
+import "../leftSection/LeftSection.css";
 
 function LeftSection() {
   const [currentLink, setCurrentLink] = useState(1);
@@ -37,7 +39,7 @@ function LeftSection() {
                   className={currentLink === 1 ? "active" : ""}
                 >
                   <a href="#">
-                    <VscHome />
+                    <MdOutlineHome />
                     <span>Home</span>
                   </a>
                 </li>
@@ -55,7 +57,7 @@ function LeftSection() {
                   className={currentLink === 3 ? "active" : ""}
                 >
                   <a href="#">
-                    <BsWallet />
+                    <MdOutlineAccountBalanceWallet />
                     <span>Wallet</span>
                   </a>
                 </li>
@@ -64,7 +66,7 @@ function LeftSection() {
                   className={currentLink === 4 ? "active" : ""}
                 >
                   <a href="#">
-                    <IoNotificationsOutline />
+                    <MdOutlineNotificationsNone />
                     <span>Notification</span>
                   </a>
                 </li>
@@ -73,7 +75,7 @@ function LeftSection() {
                   className={currentLink === 5 ? "active" : ""}
                 >
                   <a href="#">
-                    <BsQuestionCircle />
+                    <MdOutlineQuestionAnswer />
                     <span>FAQ</span>
                   </a>
                 </li>
@@ -124,7 +126,7 @@ function LeftSection() {
                   className={currentLink === 10 ? "active" : ""}
                 >
                   <a href="#">
-                    <BsInfoCircle />
+                    <MdOutlineInfo />
                     <span>About Us</span>
                   </a>
                 </li>
