@@ -1,7 +1,9 @@
 import React from "react";
 import { UserOutlined } from "@ant-design/icons";
 import { Avatar } from "antd";
+
 import "./RightSideBarCSS_Files/profileSection.css";
+
 export const ProfileSection = () => {
   return (
     <>

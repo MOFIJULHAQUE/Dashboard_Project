@@ -1,5 +1,7 @@
 import { RightSideBar } from "./components/RightSideBar/RightSideBar";
+
 import "./App.css";
+
 function App() {
   return (
     <>
@@ -13,3 +15,4 @@ function App() {
 }
 
 export default App;
+

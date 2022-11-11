@@ -1,5 +1,5 @@
-import React from "react";
 import "./RightSideBarCSS_Files/Total_balance.css"
+
 export const TotalBalance = () => {
   return (
     <>
