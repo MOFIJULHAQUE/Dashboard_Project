@@ -1,9 +1,13 @@
-import React from "react";
+import "./RightSideBarCSS_Files/Reaction.css";
 
 export const Reaction = () => {
   return (
     <>
-      <h3>Reaction</h3>
+      <div >
+      
+       
+        <h2>Comment Section need to be add</h2>
+      </div>
     </>
   );
 };

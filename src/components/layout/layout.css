@@ -1,0 +1,10 @@
+.layout{
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-layout{
+  max-width: calc(100vw - 20vw);
+  height: 100%;
+  margin-left: 20vw;
+}

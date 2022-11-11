@@ -1,19 +1,14 @@
-import LeftSection from "./components/leftSection/LeftSection";
-import Router from "./routes/Router";
+import Layout from "./components/layout/Layout";
 
 import "./App.css";
 
 function App() {
   return (
     <>
-      <div className="App">
-        <div className="main-content">
-          <LeftSection />
-          <Router />
-        </div>
-      </div>
+      <Layout />
     </>
   );
 }
 
 export default App;
+
