@@ -1,7 +1,7 @@
 import LeftSection from "./components/leftSection/LeftSection";
-import { RightSideBar } from "./components/RightSideBar/RightSideBar";
 
 import "./App.css";
+import Router from "./routes/Router";
 
 function App() {
   return (
@@ -9,12 +9,11 @@ function App() {
       <div className="App">
         <div className="main-content">
           <LeftSection />
-          <RightSideBar />
+          <Router />
         </div>
       </div>
     </>
   );
 }
-
 
 export default App;

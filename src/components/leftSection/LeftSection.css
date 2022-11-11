@@ -1,7 +1,7 @@
 section {
   background-color: #fafafa;
   height: 100vh;
-  width: 20vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,22 +46,22 @@ nav {
   margin-bottom: 10px;
 }
 
-ul {
+.links {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
 }
 
-li {
+.nav-link {
   padding: 0.5rem 1rem;
   border-radius: 0.6rem;
 }
 
-li svg {
+.nav-link svg {
   font-size: 1.3rem;
 }
 
-li a {
+.nav-link {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -73,7 +73,9 @@ li a {
 .active {
   background-color: #38a830;
 }
-.active a {
+
+.active .white{
   color: #ffffff;
   font-weight: 500;
 }
+

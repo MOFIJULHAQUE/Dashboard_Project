@@ -1,22 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 import { RiHandCoinLine } from "react-icons/ri";
 import { FaBlog } from "react-icons/fa";
 import {
-  MdOutlineHome,
   MdOutlineDashboard,
   MdOutlineAccountBalanceWallet,
   MdOutlineNotificationsNone,
   MdOutlineQuestionAnswer,
   MdOutlineSupportAgent,
   MdOutlinePolicy,
-  MdOutlineInfo
+  MdOutlineInfo,
 } from "react-icons/md";
 
 import "../leftSection/LeftSection.css";
 
 function LeftSection() {
-  const [currentLink, setCurrentLink] = useState(1);
 
   return (
     <>
@@ -33,104 +32,46 @@ function LeftSection() {
         <nav>
           <div className="top">
             <div className="links">
-              <ul>
-                <li
-                  onClick={() => setCurrentLink(1)}
-                  className={currentLink === 1 ? "active" : ""}
-                >
-                  <a href="#">
-                    <MdOutlineHome />
-                    <span>Home</span>
-                  </a>
-                </li>
-                <li
-                  onClick={() => setCurrentLink(2)}
-                  className={currentLink === 2 ? "active" : ""}
-                >
-                  <a href="#">
-                    <MdOutlineDashboard />
-                    <span>Dashboard</span>
-                  </a>
-                </li>
-                <li
-                  onClick={() => setCurrentLink(3)}
-                  className={currentLink === 3 ? "active" : ""}
-                >
-                  <a href="#">
-                    <MdOutlineAccountBalanceWallet />
-                    <span>Wallet</span>
-                  </a>
-                </li>
-                <li
-                  onClick={() => setCurrentLink(4)}
-                  className={currentLink === 4 ? "active" : ""}
-                >
-                  <a href="#">
-                    <MdOutlineNotificationsNone />
-                    <span>Notification</span>
-                  </a>
-                </li>
-                <li
-                  onClick={() => setCurrentLink(5)}
-                  className={currentLink === 5 ? "active" : ""}
-                >
-                  <a href="#">
-                    <MdOutlineQuestionAnswer />
-                    <span>FAQ</span>
-                  </a>
-                </li>
-                <li
-                  onClick={() => setCurrentLink(6)}
-                  className={currentLink === 6 ? "active" : ""}
-                >
-                  <a href="#">
-                    <FaBlog />
-                    <span>Blog</span>
-                  </a>
-                </li>
-              </ul>
+              <NavLink to="/dashboard" className="nav-link">
+                <MdOutlineDashboard className="white" />
+                <span className="white">Dashboard</span>
+              </NavLink>
+              <NavLink to="/wallet" className="nav-link">
+                <MdOutlineAccountBalanceWallet className="white" />
+                <span className="white">Wallet</span>
+              </NavLink>
+              <NavLink to="/notification" className="nav-link">
+                <MdOutlineNotificationsNone className="white" />
+                <span className="white">Notification</span>
+              </NavLink>
+              <NavLink to="faq" className="nav-link">
+                <MdOutlineQuestionAnswer className="white" />
+                <span className="white">FAQ</span>
+              </NavLink>
+              <NavLink to="/blog" className="nav-link">
+                <FaBlog className="white" />
+                <span className="white">Blog</span>
+              </NavLink>
             </div>
           </div>
           <div className="bottom">
             <div className="links">
-              <ul>
-                <li
-                  onClick={() => setCurrentLink(7)}
-                  className={currentLink === 7 ? "active" : ""}
-                >
-                  <a href="#">
-                    <RiHandCoinLine />
-                    <span>Core Team</span>
-                  </a>
-                </li>
-                <li
-                  onClick={() => setCurrentLink(8)}
-                  className={currentLink === 8 ? "active" : ""}
-                >
-                  <a href="#">
-                    <MdOutlineSupportAgent />
-                    <span>Support Channel</span>
-                  </a>
-                </li>
-                <li
-                  onClick={() => setCurrentLink(9)}
-                  className={currentLink === 9 ? "active" : ""}
-                >
-                  <a href="#">
-                    <MdOutlinePolicy />
-                    <span>Privacy Policy</span>
-                  </a>
-                </li>
-                <li
-                  onClick={() => setCurrentLink(10)}
-                  className={currentLink === 10 ? "active" : ""}
-                >
-                  <a href="#">
-                    <MdOutlineInfo />
-                    <span>About Us</span>
-                  </a>
-                </li>
-              </ul>
+              <NavLink to="/team" className="nav-link">
+                <RiHandCoinLine className="white" />
+                <span className="white">Core Team</span>
+              </NavLink>
+              <NavLink to="/support" className="nav-link">
+                <MdOutlineSupportAgent className="white" />
+                <span className="white">Support Channel</span>
+              </NavLink>
+              <NavLink to="/policy" className="nav-link">
+                <MdOutlinePolicy className="white" />
+                <span className="white">Privacy Policy</span>
+              </NavLink>
+              <NavLink to="/about-us" className="nav-link">
+                <MdOutlineInfo className="white" />
+                <span className="white">About Us</span>
+              </NavLink>
             </div>
           </div>
         </nav>

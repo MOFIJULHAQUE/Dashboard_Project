@@ -32,5 +32,13 @@ img {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 20rem auto 20rem;
+  grid-template-columns: 20vw auto;
+}
+
+.ls{
+  border: 2px solid black;
+}
+
+.content{
+  border: 5px solid red;
 }
