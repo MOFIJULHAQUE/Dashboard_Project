@@ -1,0 +1,13 @@
+.crypto_main_container{
+    width: 50%;
+    height: 100vh;
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+    background-color: whitesmoke;
+}
+.main_header{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
