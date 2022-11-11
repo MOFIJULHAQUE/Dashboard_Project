@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import AboutUs from "../pages/AboutUs";
 import Blog from "../pages/Blog";
 import Dashboard from "../pages/Dashboard";
@@ -12,6 +12,7 @@ import Wallet from "../pages/Wallet";
 const Router = () => {
   return (
     <Routes>
+      <Route path="/" element={<Navigate to='/dashboard' element={<Dashboard/>} />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/wallet" element={<Wallet />} />
       <Route path="/notification" element={<Notification />} />
