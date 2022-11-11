@@ -1,15 +1,11 @@
-import { RightSideBar } from "./components/RightSideBar/RightSideBar";
+import Layout from "./components/layout/Layout";
 
 import "./App.css";
 
 function App() {
   return (
     <>
-      <div className="App">
-        <div className="main-content">
-          <RightSideBar />
-        </div>
-      </div>
+      <Layout />
     </>
   );
 }

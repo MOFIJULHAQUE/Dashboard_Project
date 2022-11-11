@@ -1,0 +1,14 @@
+.dashboard-layout{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 20vw;
+}
+
+.dashboard-layout .main-screen{
+  border: 5px solid black;
+}
+
+.dashboard-layout .right-sidebar{
+  border: 5px solid red;
+}
