@@ -1,7 +1,8 @@
 .Right_sidebar{
+  height: 100%;
   /* height: auto;
   background-color: red; */
-  padding-top: 15% ;
+  padding-top: 7% ;
   padding-bottom: 15% ;
 }
 .theme_bell {
