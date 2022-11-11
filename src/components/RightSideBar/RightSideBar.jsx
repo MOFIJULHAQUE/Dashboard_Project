@@ -9,18 +9,21 @@ import "./RightSideBarCSS_Files/RightSideBar.css";
 export const RightSideBar = () => {
   return (
     <>
-      <div className="theme_bell">
-        <NotificationTheme />
-        <ProfileSection />
-      </div>
-      <TotalBalance />
-      <div className="Converter_section">
-        <h1>Convert</h1>
-        <Coverter />
-        {/* <Coverter /> */}
-      </div>
-      <div className="Chatbot_section">
-        <Reaction />
+      <div className="Right_sidebar">
+        <div className="theme_bell">
+          <NotificationTheme />
+          <ProfileSection />
+        </div>
+        <div className="Total_balance">
+          <TotalBalance />
+        </div>
+        <div className="Converter_section">
+          <h1>Convert</h1>
+          <Coverter />
+        </div>
+        <div className="Chatbot_section">
+          <Reaction />
+        </div>
       </div>
     </>
   );

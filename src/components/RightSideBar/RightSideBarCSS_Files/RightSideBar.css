@@ -1,5 +1,12 @@
+.Right_sidebar{
+  /* height: auto;
+  background-color: red; */
+  padding-top: 15% ;
+  padding-bottom: 15% ;
+}
 .theme_bell {
-  margin-top: 20px;
+  margin-top: 0;
+  
   display: flex;
   /* justify-content: space-around; */
 }
@@ -10,12 +17,15 @@
 .Converter_section {
   background-color: rgb(255, 255, 255);
   padding: 2%;
-  width: fit-content;
+  width: 89%;
   border-radius: 10px;
   padding-left: 0;
-  margin-left: 1.4%;
+  margin-left: 6%;
 }
 .Chatbot_section {
   margin-left: 1.4%;
 }
 
+.Total_balance{
+  margin-left: 3.5%;
+}
