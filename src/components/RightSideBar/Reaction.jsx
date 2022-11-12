@@ -7,58 +7,58 @@ export const Reaction = () => {
   const botmessage = useRef();
   const input = useRef();
 
-  const date = new Date();
-  const hours = date.getHours();
-  const seconds = date.getSeconds();
-  const day = date.getDay();
-  const month = date.getMonth();
-  const year = date.getFullYear();
+  // const date = new Date();
+  // const hours = date.getHours();
+  // const seconds = date.getSeconds();
+  // const day = date.getDay();
+  // const month = date.getMonth();
+  // const year = date.getFullYear();
 
-  const days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-  const [time, setTime] = useState(`${hours}:${seconds}`); //using the useState hook to get the data from the local time and set it to the time variable
-  const [dateTime, setDateTime] = useState(
-    `${days[day]}, ${months[month]} ${year}`
-  ); //using the useState hook to get the data from the local date and set it to the dateTime variable
+  // const days = [
+  //   "Sunday",
+  //   "Monday",
+  //   "Tuesday",
+  //   "Wednesday",
+  //   "Thursday",
+  //   "Friday",
+  //   "Saturday",
+  // ];
+  // const months = [
+  //   "January",
+  //   "February",
+  //   "March",
+  //   "April",
+  //   "May",
+  //   "June",
+  //   "July",
+  //   "August",
+  //   "September",
+  //   "October",
+  //   "November",
+  //   "December",
+  // ];
+  // // const [time, setTime] = useState(`${hours}:${seconds}`); //using the useState hook to get the data from the local time and set it to the time variable
+  // const [dateTime, setDateTime] = useState(
+  //   `${days[day]}, ${months[month]} ${year}`
+  // ); //using the useState hook to get the data from the local date and set it to the dateTime variable
 
-  const checkStatus = (e) => {
-    let isActive = true;
-    if (dateTime === "Friday, Oct 11 2022") {
-      //if the dateTime is Thursday, 13 Aug 2022, the bot will be inactive
-      isActive = false;
-    }
-    const status = document.querySelector(".status");
-    // selecting the status class
-    if (isActive === true) {
-      //if the bot is active
-      status.innerHTML = "Active";
-      status.style.color = "green";
-    } else {
-      status.innerHTML = "Not Active";
-      status.style.color = "red";
-    }
-  };
+  // const checkStatus = (e) => {
+  //   let isActive = true;
+  //   if (dateTime === "Friday, Nov 11 2022") {
+  //     //if the dateTime is Thursday, 13 Aug 2022, the bot will be inactive
+  //     isActive = false;
+  //   }
+  //   const status = document.querySelector(".status");
+  //   // selecting the status class
+  //   if (isActive === true) {
+  //     //if the bot is active
+  //     status.innerHTML = "Active";
+  //     status.style.color = "green";
+  //   } else {
+  //     status.innerHTML = "Not Active";
+  //     status.style.color = "red";
+  //   }
+  // };
   const handleInput = () => {
     // const botMessage = document.querySelector("#message1");
     // const userMessage = document.querySelector("#message2");
@@ -211,7 +211,7 @@ export const Reaction = () => {
   return (
     <>
       <div>
-        <div className="chat_App" onLoad={checkStatus}>
+        <div className="chat_App" >
           <div className="wrapper">
             <div className="content">
               <div className="header">

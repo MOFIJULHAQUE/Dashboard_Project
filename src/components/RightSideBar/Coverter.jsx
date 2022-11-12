@@ -15,9 +15,8 @@ export const Coverter=()=> {
   const [currency1, setCurrency1] = useState('USD');
   const [currency2, setCurrency2] = useState('EUR');
   const [rates, setRates] = useState([]);
-
   useEffect(() => {
-    axios.get('https://api.apilayer.com/fixer/latest?base=USD&apikey=pcKgTvH5OIq8SqqdQYH9O5QV99hoUvE9')
+    axios.get('https://api.apilayer.com/fixer/latest?base=USD&apikey=CrH3fXURs0j3YngQZjop9V8NqmkQgd5L')    //API limit exceeds
       .then(response => {
         setRates(response.data.rates);
       })

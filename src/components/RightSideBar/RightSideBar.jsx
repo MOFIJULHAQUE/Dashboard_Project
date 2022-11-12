@@ -10,16 +10,18 @@ export const RightSideBar = () => {
   return (
     <>
       <div className="Right_sidebar">
-        <div className="theme_bell">
-          <NotificationTheme />
-          <ProfileSection />
-        </div>
-        <div className="Total_balance">
-          <TotalBalance />
-        </div>
-        <div className="Converter_section">
-          <h1>Convert</h1>
-          <Coverter />
+        <div>
+          <div className="theme_bell">
+            <NotificationTheme />
+            <ProfileSection />
+          </div>
+          <div className="Total_balance">
+            <TotalBalance />
+          </div>
+          <div className="Converter_section">
+            <h1>Convert</h1>
+            <Coverter />
+          </div>
         </div>
         <div className="Chatbot_section">
           <Reaction />

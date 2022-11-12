@@ -1,9 +1,12 @@
 .Right_sidebar{
+  background: rgb(246, 246, 248);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   /* height: auto;
   background-color: red; */
   padding-top: 7% ;
-  padding-bottom: 15% ;
 }
 .theme_bell {
   margin-top: 0;
