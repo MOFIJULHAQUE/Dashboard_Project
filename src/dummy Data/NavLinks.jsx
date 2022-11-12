@@ -10,11 +10,6 @@ const navLinks = [
     display: "Wallet",
   },
   {
-    path: "/notification",
-    icon: "ri-notification-4-line",
-    display: "Notification",
-  },
-  {
     path: "/faq",
     icon: "ri-question-line",
     display: "FAQ",

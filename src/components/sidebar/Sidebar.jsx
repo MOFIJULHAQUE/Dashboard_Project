@@ -1,24 +1,24 @@
 import React from "react";
+import navLinks from "../../dummy Data/NavLinks";
 import { NavLink } from "react-router-dom";
-import navLinks from "./NavLinks";
-
 import { RiHandCoinLine, RiInformationLine } from "react-icons/ri";
 
-import "../leftSection/LeftSection.css";
+import "./Sidebar.css";
 
-const LeftSection = () => {
+const Sidebar = () => {
   return (
     <>
-      <section>
+      <section className="sidebar">
+        <div className="toggle"></div>
         <div className="brand">
           <RiHandCoinLine />
           <span>
             Crypto<span className="logo-text">Trade</span>
           </span>
         </div>
-        <div className="toggle"></div>
 
         <nav>
+          {/* navigation links */}
           <div className="top">
             <div className="links">
               <ul className="nav__list">
@@ -40,18 +40,24 @@ const LeftSection = () => {
               </ul>
             </div>
           </div>
-          <div className="bottom">
-            <div className="info-card">
-              <RiInformationLine className="icon" />
-              <div className="card-content">
-                <div className="circle1"></div>
-                <div className="circle2"></div>
 
-                <h3>Help Center</h3>
-                <p>Having trouble in CryptoTrade, Connect us for more info.</p>
-                <NavLink to="/support" className="btn">
-                  Know More
-                </NavLink>
+          {/* siderbar help-box */}
+          <div className="bottom">
+            <div className="bottom">
+              <div className="info-card">
+                <RiInformationLine className="icon" />
+                <div className="card-content">
+                  <div className="circle1"></div>
+                  <div className="circle2"></div>
+
+                  <h3>Help Center</h3>
+                  <p>
+                    Having trouble in CryptoTrade, Connect us for more info.
+                  </p>
+                  <NavLink to="/support" className="btn">
+                    Know More
+                  </NavLink>
+                </div>
               </div>
             </div>
           </div>
@@ -61,4 +67,4 @@ const LeftSection = () => {
   );
 };
 
-export default LeftSection;
+export default Sidebar;

@@ -1,14 +1,15 @@
-import Layout from "./components/layout/Layout";
+import React from "react";
+import LayoutDesign from "./components/layout/LayoutDesign";
 
 import "./App.css";
 
-function App() {
+
+const App = () => {
   return (
     <>
-      <Layout />
+      <LayoutDesign/>
     </>
   );
-}
+};
 
 export default App;
-
