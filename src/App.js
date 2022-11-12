@@ -1,5 +1,6 @@
-import 'antd/dist/antd.css';
 import { MainSection } from './components/MainSection/MainSection';
+
+import 'antd/dist/antd.css';
 
 import './App.css';
 

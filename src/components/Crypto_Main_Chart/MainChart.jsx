@@ -55,9 +55,8 @@ const data = [
   }
 ];
 
-const CustomizedLabel = (props) => {
-  const { x, y, stroke, value } = props;
-
+const CustomizedLabel = ({x, y, stroke, value}) => {
+  
   return (
     <text x={x} y={y} dy={-4} fill={stroke} fontSize={10} textAnchor="middle">
       {value}
@@ -65,9 +64,8 @@ const CustomizedLabel = (props) => {
   );
 };
 
-const CustomizedAxisTick = (props) => {
-  const { x, y, payload } = props;
-
+const CustomizedAxisTick = ({x, y, payload}) => {
+  
   return (
     
     <g transform={`translate(${x},${y})`}>
