@@ -1,40 +1,52 @@
-.coins_container{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    cursor: pointer;
-    margin-left: 10px;
-    margin-right: 10px;
+.coins_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-.Bitcoin{
-    width: 150px;
-    height: 150px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-      background-color: #fad8f1;
+.coin_box {
+  width: 180px;
+  height: 180px;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
-.Ethereum{
-    width: 150px;
-    height:150px;
-    border-radius: 5px;
-    background-color: #ceface;
- 
+.Bitcoin {
+  background-color: #fad8f1;
 }
-.DogeCoin{
-    width: 150px;
-    height: 150px;
-    border-radius: 5px;
-    background-color: #fff1ca; 
+.Ethereum {
+  background-color: #ceface;
 }
-.all_coins{
-    width: 150px;
-    height: 150px;
-    border-radius: 5px;
-    background-color: darkgoldenrod;
+.DogeCoin {
+  background-color: #fff1ca;
 }
-.all_coins_logo{
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    align-items: center;
+.all_coins {
+  background-color: white;
+}
+.all_coins_logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ExploreCoin {
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+}
+.explore_coins_btn {
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.explore_btn {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid #c9f1c8;
+  background-color: #c9f1c8;
+  font-weight: bold;
 }

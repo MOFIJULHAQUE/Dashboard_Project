@@ -1,6 +1,7 @@
 .crypto_main_container{
-    width: 50%;
-    height: 100vh;
+    /* width: 60%; */
+    width: 100%;
+    height: 100%;
     padding: 10px;
     border-radius: 5px;
     margin: auto;
@@ -10,4 +11,18 @@
     display: flex;
     margin: 10px;
     justify-content: space-between;
+}
+.Investment{
+    display: flex;
+    gap: 5px;
+}
+.profit_loss{
+height: 20px;
+width: auto;
+border: 2px solid #88c387;;
+background-color: #88c387;
+border-radius: 10px;
+font-size: smaller;
+margin-top: 5%;
+
 }

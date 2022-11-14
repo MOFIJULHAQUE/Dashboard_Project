@@ -1,0 +1,78 @@
+h1{
+    text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+/* body{
+  background-color: black;
+  color: white;
+} */
+.Togglebtn{
+  border: none;
+  outline: none;
+  font-size: larger;
+}
+.Togglebtn1{
+  border: none;
+  outline: none;
+  font-size: larger;
+  color: lightcoral;
+}
+.DarkBtn{
+  text-align: center;
+  border-radius: 5px;
+}
+.coin-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  /* color: white; */
+  /* background-color: black; */
+}
+
+.coin-search {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.coin-text {
+  text-align: center;
+}
+
+.coin-input {
+  padding-left: 16px;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  background-color: #1c6bc0;
+  color: #e2e2e2;
+}
+
+.coin-input::placeholder {
+  color: #e2e2e2;
+}
+.Search_Btn{
+  margin-left: 10px;
+  border-radius: 10px;
+  padding-left: 16px;
+  width: 180px;
+  height: 40px;
+  background-color:aqua;
+  color: black;
+  cursor: pointer;
+  font-weight:bold ;
+}
+.Search_Btn:hover{
+  background-color: #ac32e4;
+  color: rgb(251, 244, 244);
+}
