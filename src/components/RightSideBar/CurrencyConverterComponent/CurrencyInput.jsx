@@ -1,14 +1,26 @@
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import "./currencyInput.css";
 
-function CurrencyInput({amount,currency,currencies,onAmountChange,onCurrencyChange}) {
+function CurrencyInput({
+  amount,
+  currency,
+  currencies,
+  amountChange,
+  onCurrencyChange,
+}) {
+
+  // const amountChange = (e) => {
+  //   e.target.value;
+  // };
+
   
+
   return (
     <div className="group">
       <input
         type="text"
         value={amount}
-        onChange={(ev) => onAmountChange(ev.target.value)}
+        onChange={amountChange}
       />
       <select
         value={currency}
@@ -22,12 +34,12 @@ function CurrencyInput({amount,currency,currencies,onAmountChange,onCurrencyChan
   );
 }
 
-CurrencyInput.propTypes = {
-  amount: PropTypes.number.isRequired,
-  currency: PropTypes.string.isRequired,
-  currencies: PropTypes.array,
-  onAmountChange: PropTypes.func,
-  onCurrencyChange: PropTypes.func,
-};
+// CurrencyInput.propTypes = {
+//   amount: PropTypes.number.isRequired,
+//   currency: PropTypes.string.isRequired,
+//   currencies: PropTypes.array,
+//   onAmountChange: PropTypes.func,
+//   onCurrencyChange: PropTypes.func,
+// };
 
 export default CurrencyInput;
