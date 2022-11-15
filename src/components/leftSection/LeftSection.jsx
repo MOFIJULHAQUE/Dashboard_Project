@@ -13,7 +13,7 @@ const LeftSection = () => {
         <div className="brand">
           <RiHandCoinLine />
           <span>
-            Crypto<span className="logo-text">Trade</span>
+            Crypto<span className="logo-text">Trade</span> 
           </span>
         </div>
         <div className="toggle"></div>

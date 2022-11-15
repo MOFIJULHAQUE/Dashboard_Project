@@ -22,20 +22,15 @@ export function TopBuyTopSell() {
         },
       })
       .then((response) => {
-        console.log(response) ;
-         console.log(response.data[Object.keys(response.data)[1]][Object.keys(response.data[Object.keys(response.data)[1]])[0]]["1. open"]);
-        // setPost([response.data[Object.keys(response.data)[1]][Object.keys(response.data[Object.keys(response.data)[1]])[0]]["1. open"]])
-        //  console.log(setPost)
+         //console.log(response.data[Object.keys(response.data)[1]][Object.keys(response.data[Object.keys(response.data)[1]])[0]]["1. open"]);
          setPost([...response.data]);
       });
-  }, []);  //Time Series (5min)   2022-11-11 10:50:00 open:
+  }, []);  
 
 
 
   return (
     <>
-    
-      {/* <p>{post["Meta Data"]["1. Information"]}</p> */}
       <div className="top_buySell_container">
         <div className="current_balance">
           Current Investment
