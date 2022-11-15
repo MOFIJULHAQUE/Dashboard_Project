@@ -25,6 +25,11 @@ const navLinks = [
     display: "Blog",
   },
   {
+    path: "/coins",
+    icon: "ri-file-paper-2-line",
+    display: "Coins",
+  },
+  {
     path: "/team",
     icon: "ri-hand-coin-line",
     display: "Core Team",

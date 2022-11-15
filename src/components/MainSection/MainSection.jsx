@@ -2,10 +2,8 @@ import {TopBuyTopSell} from "../Crypto_TopBuy_TopSell/TopBuyTopSell"
 import {CryptoHistory} from "../CryptoHistory/CryptoHistory"
 import {MainChart} from "../Crypto_Main_Chart/MainChart"
 import {AllCoins} from "../CryptoAll_Coins/AllCoins"
- import { Crypto } from "../ExploreCoins/Crypto"
-
+ 
 import "./MainSection.css"
-
 
 export function MainSection() {
   return (
@@ -22,7 +20,6 @@ export function MainSection() {
           <CryptoHistory/> 
          <MainChart  />
          <AllCoins/>
-       <Crypto/>
         </div>
       </>
   );

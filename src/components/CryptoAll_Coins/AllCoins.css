@@ -1,6 +1,7 @@
-.coins_container {
+.top_coins_container {
   display: flex;
   justify-content: space-between;
+   /* flex-direction: row; */
   gap: 10px;
   cursor: pointer;
   margin-left: 10px;
@@ -37,16 +38,19 @@
   padding: 0%;
   text-align: center;
 }
-.explore_coins_btn {
+.ExploreCoins{
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid #c9f1c8;
+  background-color: #c9f1c8;
+  color: black;
+  font-weight: bold; 
   width: 100px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.explore_btn {
-  cursor: pointer;
-  border-radius: 10px;
-  border: 2px solid #c9f1c8;
-  background-color: #c9f1c8;
-  font-weight: bold;
+.ExploreCoins:hover{
+color: black;
 }
+

@@ -23,7 +23,7 @@ export function TopBuyTopSell() {
       })
       .then((response) => {
         console.log(response) ;
-         //console.log(response.data[Object.keys(response.data)[1]][Object.keys(response.data[Object.keys(response.data)[1]])[0]]["1. open"]);
+         console.log(response.data[Object.keys(response.data)[1]][Object.keys(response.data[Object.keys(response.data)[1]])[0]]["1. open"]);
         // setPost([response.data[Object.keys(response.data)[1]][Object.keys(response.data[Object.keys(response.data)[1]])[0]]["1. open"]])
         //  console.log(setPost)
          setPost([...response.data]);
