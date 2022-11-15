@@ -1,26 +1,54 @@
 .top_coins_container {
   display: flex;
   justify-content: space-between;
-   /* flex-direction: row; */
+  display: inline-flex;
+  /* flex-direction: row; */
   gap: 10px;
   cursor: pointer;
   margin-left: 10px;
   margin-right: 10px;
+}
+.top_coin_card {
+  display: flex;
 }
 .coin_box {
   width: 180px;
   height: 180px;
   border-radius: 5px;
   margin-bottom: 15px;
-}
-.Bitcoin {
-  background-color: #fad8f1;
-}
-.Ethereum {
   background-color: #ceface;
 }
-.DogeCoin {
-  background-color: #fff1ca;
+.top_coin_data {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.coins_symbol {
+  font-weight: bold;
+  margin: 0%;
+  padding: 0%;
+}
+.coin_price {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.comman {
+  margin: 5px;
+  
+}
+.Price {
+  font-weight: bold;
+}
+.ProfitLoss {
+  width: fit-content;
+  height: fit-content;
+  border: 2px solid#aef7ae;
+  text-align: center;
+  background-color: #aef7ae;
+  border-radius: 10px;
+  font-weight: bold;
 }
 .all_coins {
   background-color: white;
@@ -38,19 +66,18 @@
   padding: 0%;
   text-align: center;
 }
-.ExploreCoins{
+.ExploreCoins {
   cursor: pointer;
   border-radius: 10px;
   border: 2px solid #c9f1c8;
-  background-color: #c9f1c8;
+  background-color: #a6f2a5;
   color: black;
-  font-weight: bold; 
+  font-weight: bold;
   width: 100px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.ExploreCoins:hover{
-color: black;
+.ExploreCoins:hover {
+  color: black;
 }
-

@@ -18,7 +18,6 @@ export function Crypto() {
         setCoins([...response.data]);
       });
   }, []);
- 
 
   const handleChange = (e) => {
     setSearch(e.target.value);
@@ -31,7 +30,8 @@ export function Crypto() {
   return (
     <>
       <div className="coins_container">
-        <div className="coin-search"><form>
+        <div className="coin-search">
+          <form>
             <input
               className="coin-input"
               type="text"
@@ -54,6 +54,7 @@ export function Crypto() {
         </div>
         {filteredCoins.map((coin) => {
           return (
+            
             <Coin
               key={coin.id}
               name={coin.name}
