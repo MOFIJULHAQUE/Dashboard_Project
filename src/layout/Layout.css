@@ -1,0 +1,24 @@
+.dashboard-layout{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.sidebar-menu{
+  width: 260px;
+  height: 100%;
+  position: fixed;
+}
+
+.content{
+  margin-left: 260px;
+  max-width: calc(100% - 260px);
+}
+
+@media screen and (max-width : 1200px) {
+  .content{
+    margin-left: 0;
+    width: 100%;
+  }
+}
+

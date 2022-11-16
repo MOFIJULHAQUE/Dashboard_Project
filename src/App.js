@@ -1,15 +1,17 @@
-import React from "react";
-import LayoutDesign from "./components/layout/LayoutDesign";
+import React from 'react'
+import Layout from './layout/Layout'
 
-import "./App.css";
-
+import 'antd/dist/antd.css'
+import './App.css'
 
 const App = () => {
   return (
     <>
-      <LayoutDesign/>
+      <div className='app'>
+        <Layout />
+      </div>
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App

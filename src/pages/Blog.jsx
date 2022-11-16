@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import BlogArticle from "../components/blog/BlogArticle";
+import { BlogContextProvider } from "../components/blog/BlogContext";
 
 const Blog = () => {
   return (
-    <h1>Blog</h1>
-  )
-}
+    <>
+      <BlogContextProvider>
+        <BlogArticle />
+      </BlogContextProvider>
+    </>
+  );
+};
 
-export default Blog
+export default Blog;

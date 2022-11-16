@@ -1,68 +1,84 @@
-import React from "react";
-import navLinks from "../../dummy Data/NavLinks";
+import React, { useState } from "react";
+import { SidebarData } from "../../data/Data";
 import { NavLink } from "react-router-dom";
-import { RiHandCoinLine, RiInformationLine } from "react-icons/ri";
+import {
+  RiHandCoinLine,
+  RiInformationLine,
+  RiMenuFoldFill,
+} from "react-icons/ri";
 
-import "./Sidebar.css";
+import { motion } from "framer-motion";
+
+import "../../components/sidebar/Sidebar.css";
 
 const Sidebar = () => {
+  const [expanded, setExpaned] = useState(false);
+
+  const sidebarVariants = {
+    open : {
+      left : 0
+    },
+    closed : {
+      left : '-100%'
+    }
+  };
+
   return (
     <>
-      <section className="sidebar">
-        <div className="toggle"></div>
-        <div className="brand">
+      <div
+        className="menu-bars"
+        style={expanded ? {left: '30%'} : {left: '2%'}}
+        onClick={() => setExpaned(!expanded)}
+      >
+        <RiMenuFoldFill />
+      </div>
+
+      <motion.div
+        className="sidebar"
+        variants={sidebarVariants}
+        animate={expanded ? 'open' : 'closed'}
+      >
+        <div>
+        <div className="logo">
           <RiHandCoinLine />
-          <span>
-            Crypto<span className="logo-text">Trade</span>
+          <span className="logo-text">
+            Crypto<span>Trade</span>
           </span>
         </div>
 
-        <nav>
-          {/* navigation links */}
-          <div className="top">
-            <div className="links">
-              <ul className="nav__list">
-                {navLinks.map((item, index) => (
-                  <li className="nav__item" key={index}>
-                    <NavLink
-                      to={item.path}
-                      className={(navClass) =>
-                        navClass.isActive
-                          ? "nav__active nav__link"
-                          : "nav__link"
-                      }
-                    >
-                      <i className={item.icon}></i>
-                      {item.display}
-                    </NavLink>
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <div className="nav-menu">
+          <div className="links">
+            {SidebarData.map((item, index) => (
+              <NavLink
+                to={item.path}
+                key={index}
+                className={(navClass) =>
+                  navClass.isActive ? "menuItem active" : "menuItem"}
+              >
+                <item.icon />
+                <span>{item.title}</span>
+              </NavLink>
+            ))}
           </div>
 
-          {/* siderbar help-box */}
-          <div className="bottom">
-            <div className="bottom">
-              <div className="info-card">
-                <RiInformationLine className="icon" />
-                <div className="card-content">
-                  <div className="circle1"></div>
-                  <div className="circle2"></div>
+          <div className="help-box">
+            <div className="info-card">
+              <RiInformationLine className="icon" />
+              <div className="card-content">
+                <div className="circle1"></div>
+                <div className="circle2"></div>
 
-                  <h3>Help Center</h3>
-                  <p>
-                    Having trouble in CryptoTrade, Connect us for more info.
-                  </p>
-                  <NavLink to="/support" className="btn">
-                    Know More
-                  </NavLink>
-                </div>
+                <h3>Help Center</h3>
+                <p>Having trouble in CryptoTrade, Connect us for more info.</p>
+                <NavLink to="/support" className="btn">
+                  Know More
+                </NavLink>
               </div>
             </div>
           </div>
-        </nav>
-      </section>
+        </div>
+        </div>
+      </motion.div>
     </>
   );
 };
