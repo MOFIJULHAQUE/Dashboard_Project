@@ -7,7 +7,6 @@ import "./Crypto.css";
 export function Crypto() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
-  const [toggle, setToggle] = useState(true);
   useEffect(() => {
     axios
       .get(
@@ -40,30 +39,27 @@ export function Crypto() {
             />
             <button className="Search_Btn">Search Currency</button>
           </form>
-          <div className="DarkLightBtn">
-            {toggle ? (
-              <button onClick={() => setToggle(!toggle)} className="DarkBtn">
-                <i class="fa-solid fa-moon" />
-              </button>
-            ) : (
-              <button onClick={() => setToggle(!toggle)} className="LightBtn">
-                <i class="fa-solid fa-sun" />
-              </button>
-            )}
-          </div>
+        </div>
+        <div className="explore_coins_header">
+        <h3>NAME</h3>
+        <h3>SYMBOL</h3>
+        <h3>PRICE</h3> 
+        <h3>VOLUM</h3>
+        <h3>24H CHANCE</h3>
+        <h3>M. CAP</h3>
         </div>
         {filteredCoins.map((coin) => {
-          return (
-            
+          const {id,name,current_price,symbol,total_volume,market_cap,image, price_change_percentage_24h} = coin;
+          return ( 
             <Coin
-              key={coin.id}
-              name={coin.name}
-              price={coin.current_price}
-              symbol={coin.symbol}
-              marketcap={coin.total_volume}
-              volume={coin.market_cap}
-              image={coin.image}
-              priceChange={coin.price_change_percentage_24h}
+              key={id}
+              name={name}
+              price={current_price}
+              symbol={symbol}
+              marketcap={total_volume}
+              volume={market_cap}
+              image={image}
+              priceChange={price_change_percentage_24h}
             />
           );
         })}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Crypto } from "../components/ExploreCoins/Crypto";
+import { Crypto } from "../components/exploreCoins/Crypto";
 
 export function Coins() {
   return (

@@ -9,9 +9,18 @@ h1{
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
-body{
+/* body{
   background-color: black;
+} */
+.explore_coins_header{
+  display: flex;
+  border-bottom: 1px solid black;
+  /* border-top: 1px solid black; */
+  gap: 70px;
+  margin-top: 10px;
+    
 }
+
 .coins_container {
   display: flex;
   flex-direction: column;

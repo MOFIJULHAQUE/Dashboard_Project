@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-import "./TopBuyTopSell.css";
+import "./TopChart.css";
 
-export function TopBuyTopSell() {
+export function TopChart() {
   const [post, setPost] = useState([]);
   useEffect(() => {
     axios
@@ -22,15 +22,21 @@ export function TopBuyTopSell() {
         },
       })
       .then((response) => {
-         //console.log(response.data[Object.keys(response.data)[1]][Object.keys(response.data[Object.keys(response.data)[1]])[0]]["1. open"]);
+         //(response.data[Object.keys(response.data)[1]][Object.keys(response.data[Object.keys(response.data)[1]])[0]]["1. open"]);
          setPost([...response.data]);
       });
   }, []);  
 
 
-
   return (
     <>
+    {post.map((item)=>{
+      return(
+        <div>
+          console.log(item)
+        </div>
+      )
+    })}
       <div className="top_buySell_container">
         <div className="current_balance">
           Current Investment

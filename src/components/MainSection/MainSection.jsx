@@ -1,8 +1,8 @@
-import {TopBuyTopSell} from "../Crypto_TopBuy_TopSell/TopBuyTopSell"
-import {CryptoHistory} from "../CryptoHistory/CryptoHistory"
-import {MainChart} from "../Crypto_Main_Chart/MainChart"
-import {AllCoins} from "../CryptoAll_Coins/AllCoins"
- 
+import {CryptoHistory} from "../cryptoHistory/CryptoHistory"
+import {MainChart} from "../mainChart/MainChart"
+import { TopChart } from "../topCharts/TopChart";
+import {TopCoins} from "../topCoins/TopCoins"
+
 import "./MainSection.css"
 
 export function MainSection() {
@@ -16,10 +16,10 @@ export function MainSection() {
            </div>
             <h2>Bitcoin-USD(BTC-USD)</h2>
           </div>
-          <TopBuyTopSell/>
+          <TopChart/>
           <CryptoHistory/> 
          <MainChart  />
-         <AllCoins/>
+       <TopCoins/>
         </div>
       </>
   );

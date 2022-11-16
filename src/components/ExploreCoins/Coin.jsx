@@ -10,6 +10,7 @@ const Coin = ({
   priceChange,
 }) => {
   return (
+    <>
     <div className="coin-container">
       <div className="coin-row">
         <div className="coin">
@@ -28,11 +29,12 @@ const Coin = ({
           )}
 
           <p className="coin-marketcap">
-            Mkt Cap: ${marketcap.toLocaleString()}
+             ${marketcap.toLocaleString()}
           </p>
         </div>
       </div>
     </div>
+    </>
   );
 };
 
