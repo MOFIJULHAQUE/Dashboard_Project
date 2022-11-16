@@ -10,6 +10,11 @@
 .top_coin_card {
   display: flex;
 }
+.Loader,.fa-refresh{
+  text-align: center;
+  display: block;
+  margin: auto;
+}
 .coin_box {
   width: 180px;
   height: 180px;
