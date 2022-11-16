@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { BlogContext } from "./BlogContext";
 
 import "../../styles/Blog.css";
