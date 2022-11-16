@@ -6,7 +6,7 @@ export const BlogContext = createContext();
 export const BlogContextProvider = (props) => {
   const [data, setData] = useState();
 
-  const apiKey = `pub_13393cacdeb562c21d5ce9a7c508c26dc2441`;
+  const apiKey = `pub_1349101d3b81b19728d683c498eaa2b57948a`;
 
   useEffect(() => {
     axios
@@ -14,7 +14,7 @@ export const BlogContextProvider = (props) => {
         ` https://newsdata.io/api/1/news?apikey=${apiKey}&q=Cryptocurrency&language=en `
       )
       .then((response) => setData(response.data))
-      .catch((error) => console.log(error));
+      .catch((error) => {return error});
   }, []);
 
   return (

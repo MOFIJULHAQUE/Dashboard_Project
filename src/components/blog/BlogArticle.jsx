@@ -1,4 +1,6 @@
 import React, { useContext } from "react";
+import DotLoader from "react-spinners/ClipLoader";
+
 import { BlogContext } from "./BlogContext";
 
 import "../../styles/Blog.css";
@@ -20,36 +22,37 @@ const BlogArticle = (props) => {
       <div className="all__blogs">
         {data ? (
           data.results.map((blog) => {
+            const {image_url, title, description, creator, link, country, pubDate} = blog;
             return (
               <>
                 <div className="blogs">
                   <div className="blog__img">
                     <img
-                      src={blog.image_url ? blog.image_url : default__img}
+                      src={image_url ? image_url : default__img}
                       alt="image"
                     />
                   </div>
                   <div className="blog__content">
-                    <h1 className="blog__title">{blog.title}</h1>
-                    <p className="blog__desc">{blog.description}</p>
+                    <h1 className="blog__title">{title}</h1>
+                    <p className="blog__desc">{description}</p>
                     <div className="more__info">
                       <span className="blog__author">
-                        <b>Author :</b> {blog.creator}
+                        <b>Author :</b> {creator}
                       </span>{" "}
-                      <a href={blog.link} className="readMore" target="_blank">
+                      <a href={link} className="readMore" target="_blank">
                         Read More...
                       </a>
                     </div>
                     <br />
-                    <span className="blog__country">{blog.country}</span>
-                    <span className="blog__published">{blog.pubDate}</span>
+                    <span className="blog__country">{country}</span>
+                    <span className="blog__published">{pubDate}</span>
                   </div>
                 </div>
               </>
             );
           })
         ) : (
-          <h1 className="loading__text">Loading....</h1>
+          <DotLoader color="#36d7b7" size={70} />
         )}
       </div>
     </>

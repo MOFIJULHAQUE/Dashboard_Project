@@ -1,6 +1,7 @@
 import React from "react";
-import BlogArticle from "../components/blog/BlogArticle";
+
 import { BlogContextProvider } from "../components/blog/BlogContext";
+import BlogArticle from "../components/blog/BlogArticle";
 
 const Blog = () => {
   return (
