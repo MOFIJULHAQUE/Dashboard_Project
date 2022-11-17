@@ -1,13 +1,15 @@
 import React from "react";
+import { Button } from "antd";
+
 import teamImage from "../Images/team.png";
 import team_memberImage from "../Images/Happy Bunch - Desk.png";
 import member1 from "../Images/abhi.jpg";
 import member2 from "../Images/mofi.jpg";
 import member3 from "../Images/rajesh.jpg";
-import { Button } from "antd";
+
 import { Footer } from ".././components/footer/Footer";
 
-import "./CSS_of_Pages/Team.css";
+import "../styles/Team.css";
 
 const Team = () => {
   return (

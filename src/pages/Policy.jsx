@@ -1,4 +1,5 @@
 import React from "react";
+
 import image1 from "../Images/privacy (1).png";
 import image2 from "../Images/privacy (4).png";
 import image3 from "../Images/privacy (3).png";
@@ -8,7 +9,7 @@ import Signup from "../components/Login_signUp/Signup";
 
 import { DumyText } from "../components/constant/DumyText";
 
-import "./CSS_of_Pages/policy.css";
+import "../styles/policy.css";
 
 const Policy = () => {
   return (

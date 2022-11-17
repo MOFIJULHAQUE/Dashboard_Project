@@ -18,3 +18,22 @@ a {
   text-decoration: none;
   color: unset;
 }
+
+a:hover{
+  color: unset;
+}
+
+a.active{
+  color: #ffffff;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.app{
+  width: 100vw;
+  height: 100vh;
+}

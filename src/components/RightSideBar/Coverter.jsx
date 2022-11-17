@@ -6,7 +6,7 @@ import CurrencyInput from "./CurrencyConverterComponent/CurrencyInput";
 
 import axios from "axios";
 
-import './RightSideBarCSS_Files/converter.css';
+// import '..
 
 export const Coverter=()=> {
 
