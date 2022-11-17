@@ -20,17 +20,17 @@ const Sidebar = () => {
 
           <div className="nav-menu">
             <div className="links">
-              {SidebarData.map((item, index) => {
-                const { title } = item;
+              {SidebarData.map(({ path, icon, title }, index) => {
+                // const { title } = item;
                 return (
                   <NavLink
-                    to={item.path}
+                    to={path}
                     key={index}
                     className={(navClass) =>
                       navClass.isActive ? "menuItem active" : "menuItem"
                     }
                   >
-                    <item.icon />
+                    {icon}
                     <span>{title}</span>
                   </NavLink>
                 );

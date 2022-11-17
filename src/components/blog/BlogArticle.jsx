@@ -21,8 +21,8 @@ const BlogArticle = (props) => {
 
       <div className="all__blogs">
         {data ? (
-          data.results.map((blog) => {
-            const {image_url, title, description, creator, link, country, pubDate} = blog;
+          data.results.map(({image_url, title, description, creator, link, country, pubDate}) => {
+            // const {image_url, title, description, creator, link, country, pubDate} = blog;
             return (
               <>
                 <div className="blogs">

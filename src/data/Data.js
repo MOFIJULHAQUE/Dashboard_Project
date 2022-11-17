@@ -10,37 +10,37 @@ import { MdOutlinePolicy } from "react-icons/md";
 export const SidebarData = [
   {
     path : '/dashboard',
-    icon : TbLayoutDashboard,
+    icon : <TbLayoutDashboard />,
     title : 'Dashboard'
   },
   {
     path : '/wallet',
-    icon : RiWallet3Line,
+    icon : <RiWallet3Line />,
     title : 'Wallet'
   },
   {
     path : '/faq',
-    icon : BsQuestionCircle,
+    icon : <BsQuestionCircle />,
     title : 'FAQ'
   },
   {
     path : '/blog',
-    icon : FaBlog,
+    icon : <FaBlog />,
     title : 'Blog'
   },
   {
     path : '/team',
-    icon : RiHandCoinLine,
+    icon : <RiHandCoinLine />,
     title : 'Core Team'
   },
   {
     path : '/support',
-    icon : BiSupport,
+    icon : <BiSupport />,
     title : 'Support Channel'
   },
   {
     path : '/policy',
-    icon : MdOutlinePolicy,
+    icon : <MdOutlinePolicy />,
     title : 'Privacy Policy'
   },
 ]
