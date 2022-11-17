@@ -1,0 +1,143 @@
+.team_section {
+  padding: 8%;
+  height: 100%;
+  background-color: #ececf2;
+
+}
+.contentt {
+  display: flex;
+}
+.contentt img {
+  height: 230px;
+  box-shadow: 100px -30px 50px 1px rgb(212, 221, 224);
+  margin-left: 4%;
+  border-radius: 10px;
+}
+.follow_us {
+  margin-top: 4%;
+  display: flex;
+  align-items: baseline;
+}
+.follow_us span {
+  font-size: 1.4rem;
+  color: gray;
+}
+.icons {
+  margin-left: 3%;
+  width: 22vw;
+}
+.icons i {
+  margin-left: 8%;
+  font-size: 2rem;
+}
+/* ------------------------------------------------------ */
+.team_member {
+  padding: 8%;
+}
+.team_member h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 4%;
+}
+.team_member img {
+  height: 300px;
+  width: 250px;
+  border-radius: 20px;
+}
+.team_member .member_image i {
+  font-size: 2rem;
+  margin-right: 8%;
+  color: black;
+}
+.member_image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* ----------------------------------------------------- */
+.crypto_trade_community {
+  padding: 8%;
+}
+.crypto_trade_community .inner_section .member_icons {
+  color: white;
+}
+.crypto_trade_community .inner_section .member_icons i {
+  font-size: 3rem;
+  margin-right: 8%;
+  margin-bottom: 8%;
+  margin-left: 6%;
+  margin-top: 10%;
+}
+.crypto_trade_community .inner_section h1 {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+.inner_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1d1d1d;
+  padding: 4%;
+  border-radius: 20px;
+
+  box-shadow:
+  -1px -0.4px 22.6px -4px rgba(0, 0, 0, 0.26),
+  4.9px 1.8px 35.7px -4px rgba(0, 0, 0, 0.082),
+  14.5px 5.4px 41.4px -4px rgba(0, 0, 0, 0.041),
+  26.4px 9.9px 44px -4px rgba(0, 0, 0, 0.022),
+  40px 15px 74px -4px rgba(0, 0, 0, 0.01)
+;
+
+}
+.member_icons {
+  /* background-color: red; */
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+/* ------------------------------------------------------- */
+.bootom_text{
+    text-align: center;
+    line-height: 0.8;
+    padding: 8%;
+    /* background: url(../../Images/bg.png); */
+    background: url(../Images/bg.png);
+    /* background-repeat: no-repeat; */
+}
+.bootom_text .content{
+    margin-bottom: 10%;
+}
+.bootom_text h4{
+    font-size: 2.6rem;
+}
+.bootom_text p{
+    font-size: 1.2rem;
+    
+}
+/* ------------------------------------------------------- */
+.contact_section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f4f4f6;
+    padding:  2%;
+}
+
+.inside_contact_section{
+    display: flex;
+    align-items: flex-end;
+}
+.inside_contact_section h3{
+    font-size: 1.2rem;
+}
+.inside_contact_section .headphone_icon i{
+    font-size: 2rem;
+    margin-right: 20px;
+ 
+}
+/* -------------------------------- */
+.member_details {
+  text-align: center;
+}

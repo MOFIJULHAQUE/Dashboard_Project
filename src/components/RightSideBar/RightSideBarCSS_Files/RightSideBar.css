@@ -1,0 +1,35 @@
+.Right_sidebar{
+  background: rgb(246, 246, 248);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  /* height: auto;
+  background-color: red; */
+  padding-top: 7% ;
+}
+.theme_bell {
+  margin-top: 0;
+  
+  display: flex;
+  /* justify-content: space-around; */
+}
+.Converter_section h1 {
+  margin-left: 10%;
+  width: fit-content;
+}
+.Converter_section {
+  background-color: rgb(255, 255, 255);
+  padding: 2%;
+  width: 89%;
+  border-radius: 10px;
+  padding-left: 0;
+  margin-left: 6%;
+}
+.Chatbot_section {
+  margin-left: 1.4%;
+}
+
+.Total_balance{
+  margin-left: 3.5%;
+}

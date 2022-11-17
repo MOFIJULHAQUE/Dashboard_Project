@@ -1,8 +1,12 @@
 import React from 'react'
 
+import {RightSideBar }from "../components/RightSideBar/RightSideBar.jsx"
+
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <>
+      <RightSideBar/>
+    </>
   )
 }
 

@@ -1,0 +1,21 @@
+.policy_section {
+  padding: 4%;
+  /* background: url(../../Images/background.jpg); */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* width: 95%; */
+}
+.policy_section h1,
+h3 {
+  text-align: center;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.privacy_policy {
+  display: flex;
+  align-items: flex-end;
+  font-family: serif;
+  font-size: 1rem;
+  margin-top: 2%;
+}
