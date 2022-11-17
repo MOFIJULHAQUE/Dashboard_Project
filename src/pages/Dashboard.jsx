@@ -1,21 +1,9 @@
-import React from "react";
-import { RightSideBar } from "../components/RightSideBar/RightSideBar";
-
-import "../styles/dashboard.css";
+import React from 'react'
 
 const Dashboard = () => {
   return (
-    <>
-      <div className="dashboard-layout">
-        <div className="main-screen">
-          <h1>Dashboard</h1>
-        </div>
-        <div className="right-sidebar">
-          <RightSideBar />
-        </div>
-      </div>
-    </>
-  );
-};
+    <div>Dashboard</div>
+  )
+}
 
-export default Dashboard;
+export default Dashboard
