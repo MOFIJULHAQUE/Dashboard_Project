@@ -66,13 +66,17 @@ export const Coverter=()=> {
         onCurrencyChange={handleCurrency1Change}
         currencies={Object.keys(rates)}
         amount={amount1}
-        currency={currency1} />
+        currency={currency1} 
+          setAmount={setAmount1}
+        />
       <CurrencyInput
         amountChange={handleAmount2Change}
         onCurrencyChange={handleCurrency2Change}
         currencies={Object.keys(rates)}
         amount={amount2}
-        currency={currency2} />
+        currency={currency2} 
+        setCurrency={setCurrency1}
+        />
     </div>
   );
 }

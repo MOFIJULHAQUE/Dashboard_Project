@@ -1,6 +1,8 @@
 .team_section {
   padding: 8%;
   height: 100%;
+  background-color: #ececf2;
+
 }
 .contentt {
   display: flex;
@@ -30,7 +32,6 @@
 }
 /* ------------------------------------------------------ */
 .team_member {
-  background-color: #f4f4f6;
   padding: 8%;
 }
 .team_member h3 {
@@ -47,6 +48,7 @@
 .team_member .member_image i {
   font-size: 2rem;
   margin-right: 8%;
+  color: black;
 }
 .member_image {
   display: flex;
@@ -79,6 +81,15 @@
   background-color: #1d1d1d;
   padding: 4%;
   border-radius: 20px;
+
+  box-shadow:
+  -1px -0.4px 22.6px -4px rgba(0, 0, 0, 0.26),
+  4.9px 1.8px 35.7px -4px rgba(0, 0, 0, 0.082),
+  14.5px 5.4px 41.4px -4px rgba(0, 0, 0, 0.041),
+  26.4px 9.9px 44px -4px rgba(0, 0, 0, 0.022),
+  40px 15px 74px -4px rgba(0, 0, 0, 0.01)
+;
+
 }
 .member_icons {
   /* background-color: red; */
@@ -92,6 +103,7 @@
     line-height: 0.8;
     padding: 8%;
     background: url(../../Images/bg.png);
+    /* background-repeat: no-repeat; */
 }
 .bootom_text .content{
     margin-bottom: 10%;
@@ -123,4 +135,8 @@
     font-size: 2rem;
     margin-right: 20px;
  
+}
+/* -------------------------------- */
+.member_details {
+  text-align: center;
 }

@@ -1,30 +1,31 @@
 // import PropTypes from "prop-types";
 import "./currencyInput.css";
 
-function CurrencyInput({
+const CurrencyInput=({
   amount,
+  setAmount,
   currency,
+  setCurrency,
   currencies,
   amountChange,
   onCurrencyChange,
-}) {
+}) =>{
+  const handleAmountChange = (e) => {
+    // e.target.value;
+    setAmount(e.target.value);
+  };
 
-  // const amountChange = (e) => {
-  //   e.target.value;
-  // };
-
-  
+  const handleCurrencyChange = (e) => {
+    // e.target.value;
+    setCurrency(e.target.value);
+  };
 
   return (
     <div className="group">
-      <input
-        type="text"
-        value={amount}
-        onChange={amountChange}
-      />
+      <input type="text" value={amount} onChange={handleAmountChange} />
       <select
         value={currency}
-        onChange={(ev) => onCurrencyChange(ev.target.value)}
+        onChange={ handleCurrencyChange}
       >
         {currencies.map((currency) => (
           <option value={currency}>{currency}</option>

@@ -1,10 +1,11 @@
 import React from "react";
 import teamImage from "../Images/team.png";
 import team_memberImage from "../Images/Happy Bunch - Desk.png";
-import member1 from "../Images/abhi.jpg"
-import member2 from "../Images/mofi.jpg"
-import member3 from "../Images/rajesh.jpg"
+import member1 from "../Images/abhi.jpg";
+import member2 from "../Images/mofi.jpg";
+import member3 from "../Images/rajesh.jpg";
 import { Button } from "antd";
+import { Footer } from ".././components/footer/Footer";
 
 import "./CSS_of_Pages/Team.css";
 
@@ -12,6 +13,61 @@ const Team = () => {
   return (
     <>
       <div>
+        <div className="team_member">
+          <h3>The People Behind This Project</h3>
+          <div className="member_image">
+            <div>
+              <img src={member1} alt="member" />
+              <div className="member_details">
+                <h1>Abhishek Kolapkar</h1>
+                <div>
+                  <a href="https://www.linkedin.com/in/mofijul-haque-359941230/">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a href="https://twitter.com/Mofijul71136321">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://github.com/MOFIJULHAQUE">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <img src={member2} alt="member" />
+              <div className="member_details">
+                <h1>Mofijul Haque</h1>
+                <a href="https://www.linkedin.com/in/mofijul-haque-359941230/">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/Mofijul71136321">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://github.com/MOFIJULHAQUE">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <img src={member3} alt="member" />
+              <div className="member_details">
+                <h1>Rajesh Saini</h1>
+                <a href="https://www.linkedin.com/in/mofijul-haque-359941230/">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/Mofijul71136321">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://github.com/MOFIJULHAQUE">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="team_section">
           <h1>About us</h1>
           <div className="contentt">
@@ -48,31 +104,7 @@ const Team = () => {
           </div>
         </div>
 
-        <div className="team_member">
-          <h3>The People Behind This Project</h3>
-          <div className="member_image">
-            <div>
-              <img src={member1} alt="member" />
-              <h1>Abhishek Kolapkar</h1>
-              <i class="fa-brands fa-linkedin"></i>
-              <i class="fa-brands fa-twitter"></i>
-            </div>
-            <div>
-              <img src={member2} alt="member" />
-              <h1>Mofijul Haque</h1>
-              <i class="fa-brands fa-linkedin"></i>
-              <i class="fa-brands fa-twitter"></i>
-            </div>
-            <div>
-              <img src={member3} alt="member" />
-              <h1>Rajesh Saini</h1>
-              <i class="fa-brands fa-linkedin"></i>
-              <i class="fa-brands fa-twitter"></i>
-            </div>
-          </div>
-        </div>
-
-        <div className="crypto_trade_community">
+        {/* <div className="crypto_trade_community">
           <div className="inner_section">
             <div>
               <h1>
@@ -95,13 +127,13 @@ const Team = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="bootom_text">
-            <h4>Your crypto journey starts here!</h4>
-            <p>Download Crypto Trade now</p>
+          <h4>Your crypto journey starts here!</h4>
+          <p>Download Crypto Trade now</p>
         </div>
 
-        <div className="contact_section">
+        {/* <div className="contact_section">
           <div className="inside_contact_section">
             <div className="headphone_icon">
               <i class="fa-solid fa-headset"></i>
@@ -118,8 +150,9 @@ const Team = () => {
               Contact now
             </Button>
           </div>
-        </div>
+        </div> */}
       </div>
+      <Footer />
     </>
   );
 };
