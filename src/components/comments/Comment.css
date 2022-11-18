@@ -1,4 +1,4 @@
-.comment_section{
+.comment_section {
   width: 100%;
   height: 300px;
   padding: 0.5rem 1rem;
@@ -7,32 +7,25 @@
   position: relative;
 }
 
-.comment_section .header-part{
+.comment_section .header-part {
   color: #333333;
   font-size: 1rem;
   font-weight: 700;
 }
 
-.comment_section .comments_part{
+.comment_section .comments_part {
   width: 100%;
   height: 210px;
   overflow-y: auto;
 }
 
-.comment_section .comments_part ol{
+.comment_section .comments_part ol {
   list-style: none;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
-.comment_section .comments_part ol li{
-  /* align-self: flex-end; */
-  justify-self: flex-end;
-}
-
-.comment_section .comments_part span{}
-
-.comment_section .input-part{
+.comment_section .input-part {
   width: 100%;
   position: absolute;
   bottom: 5px;
@@ -40,22 +33,61 @@
   align-items: center;
 }
 
-.comment_section .input-part input{
+.comment_section .input-part input {
   width: 75%;
   border-radius: 8px;
   margin-right: 5px;
+  border: none;
+  outline: none;
+  padding: 6px 16px;
 }
 
-.comment_section .input-part button{
+.comment_section .input-part button {
   border: none;
-  background: #f89b2d;
+  background: #80ed6b;
   padding: 6px;
   text-align: center;
   border-radius: 10px;
 }
 
-.comment_section .input-part button svg{
+.comment_section .input-part button svg {
   color: #ffffff;
   font-size: 1.3rem;
   vertical-align: middle;
+}
+
+/* comment_style */
+.comment_style {
+  width: 100%;
+  padding: 2px 5px;
+  display: flex;
+  align-items: center;
+  margin: 0.2rem 0;
+}
+
+.comment_style .ant-avatar {
+  margin-right: 8px;
+}
+
+.comment_style .text {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+  padding: 2px 4px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+/* custom-scrollbar */
+.comments_part::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.comments_part::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.comments_part::-webkit-scrollbar-thumb {
+  background-color: #fb541a;
 }

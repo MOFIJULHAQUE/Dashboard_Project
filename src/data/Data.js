@@ -6,6 +6,7 @@ import { FaBlog } from "react-icons/fa";
 import { BiSupport } from "react-icons/bi";
 import { MdOutlinePolicy } from "react-icons/md";
 
+
 // sidebar links
 export const SidebarData = [
   {
@@ -44,6 +45,7 @@ export const SidebarData = [
     title: "Privacy Policy",
   },
 ];
+
 
 // Dummy text
 export const PolicyText = () => {
@@ -96,14 +98,15 @@ export const PolicyText = () => {
         AND THE RELEVANT RULES MADE THEREUNDER.
         <br />
         <br />
-
         <ol>
-          <li><b>Personal Information:</b></li>
+          <li>
+            <b>Personal Information:</b>
+          </li>
           <span>
             “Personal Information” includes without limitation the following:
           </span>
 
-          <ul style={{listStyle: 'disc inside'}}>
+          <ul style={{ listStyle: "disc inside" }}>
             <li>
               Information that You provide to Us by filling in forms on the
               Platform. This may include contact information such as name, email

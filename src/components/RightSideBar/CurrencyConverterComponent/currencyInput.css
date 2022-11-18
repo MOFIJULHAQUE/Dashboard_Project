@@ -1,10 +1,9 @@
 .group {
   display: flex;
-  /* gap: 10px; */
 }
 
-input,
-select {
+.group input,
+.group select {
   color: #333333;
   border: none;
   margin-bottom: 5px;
@@ -12,14 +11,14 @@ select {
   outline: none;
 }
 
-input {
+.group input {
   width: 60%;
-  background: #fbf8f8;
+  background: inherit;
   border-radius: 8px 0 0 8px;
 }
 
-select {
+.group select {
   width: 50%;
-  background-color: #f9e5c5;
+  background-color: #fed6c8;
   border-radius: 0 8px 8px 0;
 }
