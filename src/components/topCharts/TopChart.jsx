@@ -1,6 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+import { HighPriceChart } from "./HighPriceChart";
+import { TopChartsData } from "./TopChartsData";
+
 import "./TopChart.css";
 
 export function TopChart() {
@@ -22,33 +25,27 @@ export function TopChart() {
         },
       })
       .then((response) => {
-         //(response.data[Object.keys(response.data)[1]][Object.keys(response.data[Object.keys(response.data)[1]])[0]]["1. open"]);
          setPost([...response.data]);
+         //(response.data[Object.keys(response.data)[1]][Object.keys(response.data[Object.keys(response.data)[1]])[0]]["1. open"]);
       });
   }, []);  
 
 
   return (
     <>
-    {post.map((item)=>{
-      return(
-        <div>
-          console.log(item)
-        </div>
-      )
-    })}
       <div className="top_buySell_container">
         <div className="current_balance">
-          Current Investment
-          <h2>$45,665</h2>
+          <TopChartsData/>
+          <h2>Volume</h2>
+        <HighPriceChart />
         </div>
         <div className="top_buy">
-          Top Buy
-          <h2>$12,543</h2>
+          <h2>Top Buy</h2>
+          <HighPriceChart/>
         </div>
         <div className="top_sell">
-          Top Sell
-          <h2>$40,876</h2>
+          <h2>Top Sell</h2>
+          <HighPriceChart/>
         </div>
       </div>
     </>
