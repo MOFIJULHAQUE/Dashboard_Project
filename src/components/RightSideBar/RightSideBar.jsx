@@ -1,7 +1,7 @@
 import { ProfileSection } from "./ProfileSection";
 import { NotificationTheme } from "./NotificationTheme";
 import { TotalBalance } from "./TotalBalance";
-import { Coverter } from "./Coverter";
+import { Converter } from "./Converter";
 import { Reaction } from "./Reaction";
 
 import "./RightSideBarCSS_Files/RightSideBar.css";
@@ -20,7 +20,7 @@ export const RightSideBar = () => {
           </div>
           <div className="Converter_section">
             <h1>Convert</h1>
-            <Coverter />
+            <Converter />
           </div>
         </div>
         <div className="Chatbot_section">

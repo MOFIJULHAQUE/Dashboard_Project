@@ -5,9 +5,8 @@ import image2 from "../Images/privacy (4).png";
 import image3 from "../Images/privacy (3).png";
 import image4 from "../Images/privacy (2).png";
 
-import Signup from "../components/Login_signUp/Signup";
 
-import { DumyText } from "../components/constant/DumyText";
+import { DumyText } from "../data/Data";
 
 import "../styles/policy.css";
 
@@ -63,7 +62,6 @@ const Policy = () => {
         </div>
       </div>
 
-        <Signup />
       
     </>
   );

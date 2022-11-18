@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-
 import { Button, Form, Input } from "antd";
+import { Link } from "react-router-dom";
 
 import "./loginSignup.css";
 
-// Ant deign
-const MainLoginSignup = () => {
+const Signup = () => {
   const onFinish = (values) => {
     console.log("Success:", values);
   };
@@ -67,7 +66,7 @@ const MainLoginSignup = () => {
       console.log(inputValue, "Your account is successfully created");
 
       localStorage.setItem(
-        "user data :-",
+        "user data",
         JSON.stringify([...data, inputValue])
       );
     }
@@ -172,7 +171,7 @@ const MainLoginSignup = () => {
             </Form>
 
             <p>
-              Already have an account <span>Sign In</span>
+              Already have an account <b><span><Link to="/login">Sign In</Link></span></b>
             </p>
           </div>
 
@@ -183,8 +182,10 @@ const MainLoginSignup = () => {
           </div>
         </div>
       </div>
+
+      
     </>
   );
 };
 
-export default MainLoginSignup;
+export default Signup;

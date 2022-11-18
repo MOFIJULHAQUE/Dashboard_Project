@@ -1,4 +1,3 @@
-import React from "react";
 import appleStore from "../../Images/apple-store.png";
 import playStore from "../../Images/playstore.png";
 

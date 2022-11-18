@@ -4,9 +4,11 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 // import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import "../styles/faq.css";
+
+import MainLoginSignUp from "../components/Login_signUp/MainLoginSignUp";
 
 const Faq = () => {
   const [expanded, setExpanded] = useState("panel1");
@@ -93,7 +95,7 @@ const Faq = () => {
               <Typography>How to buy crypto in India ?</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography >
+              <Typography>
                 Crypto Trade has simplified Cryptos for Indians, you can
                 download our Android and iOS app to begin trading in Crypto with
                 just ₹100
@@ -199,6 +201,10 @@ const Faq = () => {
             </AccordionDetails>
           </Accordion>
         </div>
+      </div>
+
+      <div>
+        <MainLoginSignUp />
       </div>
     </>
   );

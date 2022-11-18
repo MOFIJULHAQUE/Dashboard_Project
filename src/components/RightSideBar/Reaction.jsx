@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 
 import "./RightSideBarCSS_Files/Reaction.css";
 
@@ -126,7 +126,7 @@ export const Reaction = () => {
       setTimeout(() => {
         getBotMessage.innerText = "I am fine, thank you";
         status.innerText = "Active";
-        status.style.color = "green"; 
+        status.style.color = "green";
         inputRef.value = ""; // clear the input
       }, 2000);
     }
@@ -179,20 +179,15 @@ export const Reaction = () => {
       }, 2000);
     }
 
-    let owner2 = [
-      "Who's Team-S|who's Team-S|Who is Team-S|who is Team-S",
-    ];
+    let owner2 = ["Who's Team-S|who's Team-S|Who is Team-S|who is Team-S"];
     let words10 = new RegExp(owner2);
     if (words10.test(document.querySelector("#input").value)) {
       getBotMessage.innerText = "Typing...";
       setTimeout(() => {
-        getBotMessage.innerText =
-          "Team-S is the owner of this Project";
+        getBotMessage.innerText = "Team-S is the owner of this Project";
         inputRef.value = ""; // clear the input
       }, 2000);
     }
-
-    
 
     let ageAsk = [
       "What's your age|what's your age|What is your age|what is your age|How old are you|how old are you",
@@ -211,7 +206,7 @@ export const Reaction = () => {
   return (
     <>
       <div>
-        <div className="chat_App" >
+        <div className="chat_App">
           <div className="wrapper">
             <div className="content">
               <div className="header">

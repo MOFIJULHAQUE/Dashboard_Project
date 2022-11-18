@@ -1,9 +1,12 @@
-import React from 'react'
-
+import React from "react";
+import Login from ".././components/Login_signUp/Login";
 const Wallet = () => {
   return (
-    <div>Wallet</div>
-  )
-}
+    <>
+      <div>Wallet</div>
+      <Login />
+    </>
+  );
+};
 
-export default Wallet
+export default Wallet;
