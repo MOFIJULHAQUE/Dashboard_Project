@@ -1,7 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import AboutUs from "../pages/AboutUs";
 import Blog from "../pages/Blog"
-import { Coins } from "../pages/Coins";
 import Dashboard from "../pages/Dashboard";
 import FAQ from "../pages/Faq";
 import Notification from "../pages/Notification";
@@ -9,7 +8,6 @@ import Policy from "../pages/Policy";
 import Support from "../pages/Support";
 import Team from "../pages/Team";
 import Wallet from "../pages/Wallet";
-
 const Router = () => {
   return (
     <Routes>
@@ -19,7 +17,6 @@ const Router = () => {
       <Route path="/notification" element={<Notification />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/blog" element={<Blog />} />
-      <Route path="/coins" element={<Coins />} />
       <Route path="/team" element={<Team />} />
       <Route path="/support" element={<Support />} />
       <Route path="/policy" element={<Policy />} />

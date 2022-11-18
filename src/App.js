@@ -1,13 +1,18 @@
-import Layout from "./components/layout/Layout";
+import React from 'react'
+import 'antd/dist/antd.css'
 
-import "./App.css";
+import Layout from './layout/Layout'
 
-function App() {
+import './App.css'
+
+const App = () => {
   return (
     <>
-      <Layout />
+      <div className='app'>
+        <Layout />
+      </div>
     </>
-  );
+  )
 }
 export default App;
 

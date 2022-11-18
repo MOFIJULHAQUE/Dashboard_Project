@@ -1,15 +1,14 @@
 import React from "react";
-import { MainSection } from "../components/mainSection/MainSection";
 import { RightSideBar } from "../components/RightSideBar/RightSideBar";
 
-import "../styles/dashboard.css";
+import '../styles/Dashboard.css'
 
 const Dashboard = () => {
   return (
     <>
       <div className="dashboard-layout">
-        <div className="main-screen"> 
-         <MainSection/>
+        <div className="main-screen">
+          <h1>Dashboard</h1>
         </div>
         <div className="right-sidebar">
           <RightSideBar />
@@ -18,4 +17,5 @@ const Dashboard = () => {
     </>
   );
 };
+
 export default Dashboard;

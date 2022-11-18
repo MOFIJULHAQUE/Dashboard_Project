@@ -1,0 +1,24 @@
+.group {
+  display: flex;
+}
+
+.group input,
+.group select {
+  color: #333333;
+  border: none;
+  margin-bottom: 5px;
+  padding: 8px 16px;
+  outline: none;
+}
+
+.group input {
+  width: 60%;
+  background: inherit;
+  border-radius: 8px 0 0 8px;
+}
+
+.group select {
+  width: 50%;
+  background-color: #fed6c8;
+  border-radius: 0 8px 8px 0;
+}

@@ -25,12 +25,9 @@ export function TopChart() {
         },
       })
       .then((response) => {
-         setPost([...response.data]);
-         //(response.data[Object.keys(response.data)[1]][Object.keys(response.data[Object.keys(response.data)[1]])[0]]["1. open"]);
+         setPost([...response.data["Time Series (5min)"]["2022-11-17 20:00:00"]["1. open"]]);
       });
   }, []);  
-
-
   return (
     <>
       <div className="top_buySell_container">

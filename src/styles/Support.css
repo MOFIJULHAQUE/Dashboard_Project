@@ -1,0 +1,12 @@
+.support__screen{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 25vw;
+}
+
+.contactUS__screen, .chatBot__screen{
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid; */
+}
