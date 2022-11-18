@@ -40,9 +40,7 @@ const Signup = () => {
   };
   // ------------------------------------
 
-  // console.log(new Date().getFullYear());
 
-  // on
   const addData = (e) => {
     e.preventDefault();
 
