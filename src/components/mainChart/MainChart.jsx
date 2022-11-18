@@ -74,6 +74,8 @@ const CustomizedAxisTick = ({ x, y, payload }) => {
 };
 
 export function MainChart() {
+
+
   return (
     <div className="main_chart_container">
       <LineChart

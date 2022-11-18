@@ -1,25 +1,35 @@
 import axios from "axios";
-import React, { useState, useEffect } from "react";
 
+import { HighPriceChart } from "./HighPriceChart";
 
-export function TopChartsData() {
-  const [topCoin, setTopCoin] = useState([]);
-  // const [loading, setLoading] = useState(true);
-
-  // useEffect(() => {
-  //   const Crypto = async () => {
-  //     const response = await axios.get(
-  //       "https://appi.coingecko.com/ai/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline"
-  //     );
-  //     console.log(response.data)
-  //     setTopCoin(response.data);
-  //   };
-  //   Crypto();
-  // }, []);
-
+export function TopChartsData({
+  image,
+  circulating_supply,
+  total_supply,
+  max_supply,
+}) {
   return (
     <div>
-      <h3>Circulating Supply</h3>
+      <div className="top_chart_container">
+        <div className="circulating_supply supply_box">
+        <img src={image} className="ChartImage" />
+          <h3 className="Supply">Circulating Supply</h3>
+          <h3 className="circulatingData">${circulating_supply}</h3>
+          <HighPriceChart />
+        </div>
+        <div className="total_supply supply_box">
+        <img src={image} className="ChartImage" />
+          <h3 className="Supply">Total_supply</h3>
+          <h3  className="totalData">${total_supply}</h3>
+          <HighPriceChart />
+        </div>
+        <div className="max_supply supply_box">
+        <img src={image} className="ChartImage" />
+          <h3 className="Supply">Max_supply</h3>
+          <h3  className="maxData">${max_supply}</h3>
+          <HighPriceChart />
+        </div>
+      </div>
     </div>
   );
 }

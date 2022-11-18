@@ -1,53 +1,52 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-import { HighPriceChart } from "./HighPriceChart";
-// import { TopChartsData } from "./TopChartsData";
+import { TopChartsData } from "./TopChartsData";
 
 import "./TopChart.css";
 
 export function TopChart() {
-  const [post, setPost] = useState([]);
+  const [coins, setCoins] = useState([]);
   useEffect(() => {
     axios
-      .get(`https://alpha-vantage.p.rapidapi.com/query`, {
-        params: {
-          interval: "5min",
-          function: "TIME_SERIES_INTRADAY",
-          symbol: "MSFT",
-          datatype: "json",
-          output_size: "compact",
-        },
-        headers: {
-          "X-RapidAPI-Key":
-            "82a76f8ad3mshe05dc70539423d5p18ba88jsndb26b70a6c41",
-          "X-RapidAPI-Host": "alpha-vantage.p.rapidapi.com",
-        },
-      })
+      .get(
+        `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=false`
+      )
       .then((response) => {
-         setPost([...response.data["Time Series (5min)"]["2022-11-17 20:00:00"]["1. open"]]);
+        console.log(response.data);
+        setCoins([...response.data]);
       });
-  }, []);  
+  }, []);
+
   return (
     <>
-      <div className="top_buySell_container">
-        <div className="current_balance">
-          {/* <TopChartsData/> */}
-          <h3>Circulating Supply</h3>
-          <h3>4784867</h3>
-        <HighPriceChart />
-        </div>
-        <div className="top_buy">
-          <h3>Total Supply</h3>
-          <h3>4784867</h3>
-          <HighPriceChart/>
-        </div>
-        <div className="top_sell">
-          <h3>Max Supply</h3>
-          <h3>4784867</h3>
-          <HighPriceChart/>
-        </div>
-      </div>
+    <div className="top_coin_card">
+      {coins.map(
+          ({
+            image,
+            circulating_supply,
+            total_supply,
+            max_supply,
+            
+          },i) => {
+            if (i < 1) {
+              return (
+                <>
+                  <TopChartsData
+                  image={image}
+                  circulating_supply={circulating_supply}
+                  total_supply={total_supply}
+                  max_supply={ max_supply}
+                   
+                  />
+                </>
+              );
+            }
+          }
+        )
+      }
+
+    </div>
     </>
   );
 }
