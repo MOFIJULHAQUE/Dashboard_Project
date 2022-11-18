@@ -1,28 +1,28 @@
-.crypto_main_container{
-    /* width: 60%; */
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    margin: auto;
-    background-color: whitesmoke;
+.crypto_main_container {
+  width: 100%;
+  height: 100%;
+  /* margin: auto; */
+  padding: 0 1rem;
+  background-color: #ffffff;
 }
-.main_header{
-    display: flex;
-    margin: 10px;
-    justify-content: space-between;
-}
-.Investment{
-    display: flex;
-    gap: 5px;
-}
-.profit_loss{
-height: 20px;
-width: auto;
-border: 2px solid #88c387;;
-background-color: #88c387;
-border-radius: 10px;
-font-size: smaller;
-margin-top: 5%;
 
+.main_header {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Investment .rate {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.profit_loss {
+  border: 2px solid #88c387;
+  background-color: #88c387;
+  border-radius: 10px;
+  font-size: smaller;
+  margin-top: 5%;
 }

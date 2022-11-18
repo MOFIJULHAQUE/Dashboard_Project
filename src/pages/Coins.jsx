@@ -1,10 +1,12 @@
-import React from "react";
-import { Crypto } from "../components/exploreCoins/Crypto";
+import React from 'react'
+// import { Crypto } from '../components/ExploreCoins/Crypto'
 
-export function Coins() {
+const Coins = () => {
   return (
-    <div>
-    <Crypto/>
-    </div>
-  );
+    <>
+      {/* <Crypto /> */}
+    </>
+  )
 }
+
+export default Coins

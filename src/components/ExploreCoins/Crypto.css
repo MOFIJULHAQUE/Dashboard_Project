@@ -1,25 +1,12 @@
-h1{
-    text-align: center;
-}
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-}
-/* body{
-  background-color: black;
-} */
-.explore_coins_header{
+.explore_coins_header {
   width: 85%;
   border-radius: 5px;
   display: flex;
-  justify-content:space-around;
-  border: 1px solid  #d7d7d7;
-  margin-top: 10px;   
+  justify-content: space-around;
+  border: 1px solid #d7d7d7;
+  margin-top: 10px;
 }
+
 .coins_container {
   display: flex;
   flex-direction: column;
@@ -43,45 +30,48 @@ h1{
   width: 400px;
   height: 40px;
   border-top-left-radius: 10px;
-  border-bottom-left-radius:10px ;
+  border-bottom-left-radius: 10px;
   text-align: center;
   border: none;
-  background-color:  #e2e2e2;
- 
+  background-color: #e2e2e2;
 }
 
 .coin-input::placeholder {
-  color: black
+  color: black;
 }
-.Search_Btn{
-border-top-right-radius: 10px;
-border-bottom-right-radius:10px ;
+
+.Search_Btn {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   width: 50px;
   height: 40px;
   font-size: large;
-  background-color:black;
+  background-color: black;
   color: white;
   border: 2px solid black;
   cursor: pointer;
-  font-weight:bold 
- 
+  font-weight: bold;
 }
-.Search_Btn:hover{
+
+.Search_Btn:hover {
   background-color: #ac32e4;
   color: rgb(251, 244, 244);
 }
-.DarkLightBtn{
+
+.DarkLightBtn {
   display: flex;
   justify-content: end;
   border-radius: 5px;
 }
-.DarkBtn{
+
+.DarkBtn {
   border: none;
   outline: none;
   font-size: larger;
   background-color: white;
 }
-.LightBtn{
+
+.LightBtn {
   border: none;
   outline: none;
   font-size: larger;

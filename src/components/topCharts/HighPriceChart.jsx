@@ -1,6 +1,6 @@
 import { AreaChart, Area } from "recharts";
 
-const data = [
+ const data = [
   {
     uv: 4000,
     pv: 2400,
@@ -41,6 +41,7 @@ export  function HighPriceChart () {
       margin={{ 
         right: 0,
         left: 0,
+        bottom:5,
       }}
     >
       <Area type="monotone" dataKey="uv" stroke="#f896e7" fill="#d1e5fe" />

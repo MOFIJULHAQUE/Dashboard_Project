@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 import { HighPriceChart } from "./HighPriceChart";
-import { TopChartsData } from "./TopChartsData";
+// import { TopChartsData } from "./TopChartsData";
 
 import "./TopChart.css";
 
@@ -32,16 +32,19 @@ export function TopChart() {
     <>
       <div className="top_buySell_container">
         <div className="current_balance">
-          <TopChartsData/>
-          <h2>Volume</h2>
+          {/* <TopChartsData/> */}
+          <h3>Circulating Supply</h3>
+          <h3>4784867</h3>
         <HighPriceChart />
         </div>
         <div className="top_buy">
-          <h2>Top Buy</h2>
+          <h3>Total Supply</h3>
+          <h3>4784867</h3>
           <HighPriceChart/>
         </div>
         <div className="top_sell">
-          <h2>Top Sell</h2>
+          <h3>Max Supply</h3>
+          <h3>4784867</h3>
           <HighPriceChart/>
         </div>
       </div>

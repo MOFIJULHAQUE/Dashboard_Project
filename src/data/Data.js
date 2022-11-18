@@ -8,7 +8,7 @@ import { MdOutlinePolicy } from "react-icons/md";
 
 // team-members images import
 import member1 from "../Images/mofi.jpg";
-import member2 from "../Images/rajesh.jpg";
+import member2 from "../Images/Rajesh1.jpeg";
 import member3 from "../Images/abhi.jpg";
 
 // sidebar links

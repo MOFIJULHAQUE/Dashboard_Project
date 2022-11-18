@@ -1,21 +1,22 @@
-import React from "react";
-import { RightSideBar } from "../components/RightSideBar/RightSideBar";
+import React from 'react'
+import {MainSection} from "../components/mainSection/MainSection"
+import { RightSideBar } from '../components/RightSideBar/RightSideBar'
 
 import '../styles/Dashboard.css'
 
 const Dashboard = () => {
   return (
     <>
-      <div className="dashboard-layout">
-        <div className="main-screen">
-          <h1>Dashboard</h1>
+      <div className="content__screen">
+        <div className="main__dash">
+       <MainSection/>
         </div>
-        <div className="right-sidebar">
+        <div className="right_sidebar">
           <RightSideBar />
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Dashboard;
+export default Dashboard
