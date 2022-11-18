@@ -28,30 +28,32 @@ export function TopCoins() {
           <i className="fa fa-refresh fa-spin"></i>Loading...
         </h1>
       ) : (
-        topCoin.map((coin, i) => {
-          const {
+        topCoin.map(
+          ({
             image,
             symbol,
             price_change_percentage_24h,
             price_change_24h,
             total_volume,
             current_price,
-          } = coin;
-          if (i < 3) {
-            return (
-              <>
-                <TopCoinsData
-                  image={image}
-                  symbol={symbol}
-                  price_change_percentage_24h={price_change_percentage_24h}
-                  price_change_24h={price_change_24h}
-                  total_volume={total_volume}
-                  current_price={current_price}
-                />
-              </>
-            );
+            
+          },i) => {
+            if (i < 3) {
+              return (
+                <>
+                  <TopCoinsData
+                    image={image}
+                    symbol={symbol}
+                    price_change_percentage_24h={price_change_percentage_24h}
+                    price_change_24h={price_change_24h}
+                    total_volume={total_volume}
+                    current_price={current_price}
+                  />
+                </>
+              );
+            }
           }
-        })
+        )
       )}
       <div className="all_coins coin_box">
         <img className="all_coins_logo" src="Assets/Coins2.jpg" alt="coins" />

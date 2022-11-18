@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from "react";
-import Coin from "./Coin";
 import axios from "axios";
+import React, { useState, useEffect } from "react";
+import { SearchOutlined } from "@ant-design/icons"
+
+import Coin from "./Coin";
 
 import "./Crypto.css";
 
@@ -37,32 +39,44 @@ export function Crypto() {
               onChange={handleChange}
               placeholder="Search"
             />
-            <button className="Search_Btn">Search Currency</button>
+            <button className="Search_Btn">
+              <SearchOutlined />
+            </button>
           </form>
         </div>
         <div className="explore_coins_header">
-        <h3>NAME</h3>
-        <h3>SYMBOL</h3>
-        <h3>PRICE</h3> 
-        <h3>VOLUM</h3>
-        <h3>24H CHANCE</h3>
-        <h3>M. CAP</h3>
+          <h3>NAME</h3>
+          <h3>SYMBOL</h3>
+          <h3>PRICE</h3>
+          <h3>VOLUM</h3>
+          <h3>24H CHANCE</h3>
+          <h3>M. CAP</h3>
         </div>
-        {filteredCoins.map((coin) => {
-          const {id,name,current_price,symbol,total_volume,market_cap,image, price_change_percentage_24h} = coin;
-          return ( 
-            <Coin
-              key={id}
-              name={name}
-              price={current_price}
-              symbol={symbol}
-              marketcap={total_volume}
-              volume={market_cap}
-              image={image}
-              priceChange={price_change_percentage_24h}
-            />
-          );
-        })}
+        {filteredCoins.map(
+          ({
+            id,
+            name,
+            current_price,
+            symbol,
+            total_volume,
+            market_cap,
+            image,
+            price_change_percentage_24h,
+          }) => {
+            return (
+              <Coin
+                key={id}
+                name={name}
+                price={current_price}
+                symbol={symbol}
+                marketcap={total_volume}
+                volume={market_cap}
+                image={image}
+                priceChange={price_change_percentage_24h}
+              />
+            );
+          }
+        )}
       </div>
     </>
   );
