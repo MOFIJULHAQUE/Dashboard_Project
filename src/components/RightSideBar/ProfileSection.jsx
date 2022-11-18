@@ -1,4 +1,4 @@
-import { UserOutlined } from "@ant-design/icons";
+import React from "react";
 import { Avatar } from "antd";
 
 import "./RightSideBarCSS_Files/profileSection.css";
@@ -7,12 +7,11 @@ export const ProfileSection = () => {
   return (
     <>
       <div className="profile_section">
-        <div>
-          <span>Good Morning.</span>
-          <h2>Trader</h2>
-        </div>
         <div className="profile_avatar">
-          <Avatar size={37} icon={<UserOutlined />} />
+          <Avatar
+            alt="Travis Howard"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZshQ6qF-w8Ow6LTRAysWJYUWa-I7OmAlKdg&usqp=CAU"
+          />
         </div>
       </div>
     </>

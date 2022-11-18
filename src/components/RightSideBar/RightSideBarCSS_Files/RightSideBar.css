@@ -1,35 +1,28 @@
-.Right_sidebar{
-  background: rgb(246, 246, 248);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.Right_sidebar_section {
+  width: 100%;
   height: 100%;
-  /* height: auto;
-  background-color: red; */
-  padding-top: 7% ;
-}
-.theme_bell {
-  margin-top: 0;
-  
-  display: flex;
-  /* justify-content: space-around; */
-}
-.Converter_section h1 {
-  margin-left: 10%;
-  width: fit-content;
-}
-.Converter_section {
-  background-color: rgb(255, 255, 255);
-  padding: 2%;
-  width: 89%;
-  border-radius: 10px;
-  padding-left: 0;
-  margin-left: 6%;
-}
-.Chatbot_section {
-  margin-left: 1.4%;
+  padding: 0.5rem 1rem;
+  background: #eefde0;
 }
 
-.Total_balance{
-  margin-left: 3.5%;
+.header_part, .Total_balance_section, .Converter_section, .comment_section_screen{
+  width: 100%;
+}
+
+.header_part {
+  width: 100%;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Total_balance_section, .Converter_section {
+  margin: 0.8rem 0;
+}
+
+.Converter_section {
+  border-radius: 10px;
+  padding: 0.5rem;
+  background: #ffffff;
 }

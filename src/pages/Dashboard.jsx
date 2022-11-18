@@ -1,11 +1,17 @@
 import React from 'react'
+import { RightSideBar } from '../components/RightSideBar/RightSideBar'
 
-import {RightSideBar }from "../components/RightSideBar/RightSideBar.jsx"
+import '../styles/Dashboard.css'
 
 const Dashboard = () => {
   return (
     <>
-      <RightSideBar/>
+      <div className="content__screen">
+        <div className="main__dash"></div>
+        <div className="right_sidebar">
+          <RightSideBar />
+        </div>
+      </div>
     </>
   )
 }

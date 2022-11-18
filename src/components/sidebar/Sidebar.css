@@ -4,8 +4,7 @@
   display: flex;
   flex-direction: column;
   padding: 0.5rem 0;
-  background-color: #fafafa;
-  transition: all .3s linear;
+  background-color: #eefde0;
 }
 
 .menu-bars {
@@ -150,7 +149,7 @@
 
 
 /*************** responsiveness CSS ***************/
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .sidebar {
     position: fixed;
     height: 100%;
@@ -191,7 +190,7 @@
   .info-card {
     display: none;
   }
-}
+} */
 
 /* @media screen and (max-width: 768px) {
   .sidebar {

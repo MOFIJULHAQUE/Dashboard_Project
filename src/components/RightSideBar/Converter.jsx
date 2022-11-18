@@ -3,19 +3,19 @@ import axios from "axios";
 
 import CurrencyInput from "./CurrencyConverterComponent/CurrencyInput";
 
-export const Converter = () => {
+export const Coverter = () => {
   const [amount1, setAmount1] = useState(1);
   const [amount2, setAmount2] = useState(1);
   const [currency1, setCurrency1] = useState("USD");
   const [currency2, setCurrency2] = useState("EUR");
   const [rates, setRates] = useState([]);
 
-  // const key = `Th1Tl2FO3PRPawRdsi71QKndkpre1XxG`;
+  const apiKey = `PDTT7KMjZDIpq2PW2elYHZDmeaVU1vrE`;
 
-  const key = `PDTT7KMjZDIpq2PW2elYHZDmeaVU1vrE`;
+  const url = `https://api.apilayer.com/fixer/latest?base=USD&apikey=${apiKey}`;
   useEffect(() => {
     axios
-      .get(`https://api.apilayer.com/fixer/latest?base=USD&apikey=${key}`)
+      .get(url) //API limit exceeds
       .then((response) => {
         setRates(response.data.rates);
       });

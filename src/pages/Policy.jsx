@@ -1,12 +1,7 @@
 import React from "react";
+import {MdOutlinePolicy} from 'react-icons/md'
 
-import image1 from "../Images/privacy (1).png";
-import image2 from "../Images/privacy (4).png";
-import image3 from "../Images/privacy (3).png";
-import image4 from "../Images/privacy (2).png";
-
-
-import { DumyText } from "../data/Data";
+import { PolicyText } from "../data/Data";
 
 import "../styles/policy.css";
 
@@ -14,55 +9,21 @@ const Policy = () => {
   return (
     <>
       <div className="policy_section">
-        <h1>PRIVACY POLICY</h1>
-        <h3>Crypto Trade</h3>
-
-        <div className="privacy_policy">
-          <div>
-            <p>
-              <DumyText />
-            </p>
+        <div className="header">
+          <div className="left">
+            <h1>PRIVACY POLICY</h1>
+            <h3>CryptoTrade</h3>
           </div>
-          <div>
-            <img src={image1} alt="image1" />
+          <div className="right">
+            <MdOutlinePolicy />
           </div>
         </div>
+        <hr />
 
-        <div className="privacy_policy">
-          <div>
-            <img src={image2} alt="image1" />
-          </div>
-          <div>
-            <p>
-              <DumyText />
-            </p>
-          </div>
-        </div>
-
-        <div className="privacy_policy">
-          <div>
-            <p>
-              <DumyText />
-            </p>
-          </div>
-          <div>
-            <img src={image4} alt="image1" />
-          </div>
-        </div>
-
-        <div className="privacy_policy">
-          <div>
-            <img src={image3} alt="image3" />
-          </div>
-          <div>
-            <p>
-              <DumyText />
-            </p>
-          </div>
-        </div>
+        <p className="policyText">
+          <PolicyText />
+        </p>
       </div>
-
-      
     </>
   );
 };
