@@ -1,9 +1,8 @@
 import React from "react";
 
-import { Members } from "../../data/Data";
+import { Members } from "../data/Data";
 
-import '../../styles/Team.css'
-// import "./TeamInfo.css";
+import "../styles/Team.css";
 
 const TeamInfo = () => {
   return (

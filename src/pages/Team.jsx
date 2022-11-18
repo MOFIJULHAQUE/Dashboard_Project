@@ -1,7 +1,6 @@
 import React from "react";
-
-import AboutUs from "../components/aboutUs/AboutUs";
-import TeamInfo from "../components/team/TeamInfo";
+import AboutUs from "../components/AboutUs";
+import TeamInfo from "../components/TeamInfo";
 
 import "../styles/Team.css";
 

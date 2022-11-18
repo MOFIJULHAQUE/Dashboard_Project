@@ -1,10 +1,8 @@
 import React from "react";
 
-import { SocialIcons } from "../../data/Data";
-import teamImage from "../../Images/about-us.jpg";
+import teamImage from "../Images/about-us.jpg";
 
-import '../../styles/Team.css'
-// import "./AboutUs.css";
+import "../styles/Team.css";
 
 const AboutUs = () => {
   return (

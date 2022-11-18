@@ -10,7 +10,7 @@ export const Coverter = () => {
   const [currency2, setCurrency2] = useState("EUR");
   const [rates, setRates] = useState([]);
 
-  const apiKey = `Th1Tl2FO3PRPawRdsi71QKndkpre1XxG`;
+  const apiKey = `PDTT7KMjZDIpq2PW2elYHZDmeaVU1vrE`;
 
   const url = `https://api.apilayer.com/fixer/latest?base=USD&apikey=${apiKey}`;
   useEffect(() => {
