@@ -1,9 +1,11 @@
+import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { TopCoinsData } from "./TopCoinsData";
 
-import "./TopCoins.css";
+import { TopCoinsData } from "./TopCoinsData";
+// import img3 from '../../Assets/Coins2.jpg'
+
+// import './TopCoins.css'
 
 export function TopCoins() {
   const [topCoin, setTopCoin] = useState([]);
@@ -11,7 +13,7 @@ export function TopCoins() {
 
   useEffect(() => {
     const Crypto = async () => {
-      setLoading(true);
+      // setLoading(true);
       const response = await axios.get(
         "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=false"
       );
@@ -55,8 +57,8 @@ export function TopCoins() {
           }
         )
       )}
-      <div className="all_coins coin_box">
-        <img className="all_coins_logo" src="Assets/Coins2.jpg" alt="coins" />
+      {/* <div className="all_coins coin_box">
+        <img className="all_coins_logo" src={img3} alt="coins" />
         <h3 className="ExploreCoin">Crypto Exchange</h3>
         <p className="ExploreCoin">
           Trusted by millions, fees and fast traders
@@ -66,7 +68,7 @@ export function TopCoins() {
             Explore Coins
           </NavLink>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
