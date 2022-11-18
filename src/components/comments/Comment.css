@@ -84,10 +84,6 @@
   width: 0.3em;
 }
 
-.comments_part::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
 .comments_part::-webkit-scrollbar-thumb {
   background-color: #fb541a;
 }

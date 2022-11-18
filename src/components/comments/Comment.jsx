@@ -34,7 +34,6 @@ const Comment = () => {
                   key={index}
                   id={index}
                   text={itemval}
-                  // onSelect={deleteItems}
                 />
               );
             })}

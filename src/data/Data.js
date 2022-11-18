@@ -1,11 +1,15 @@
 // sidebar icons
-import { RiHandCoinLine, RiWallet3Line } from "react-icons/ri";
+import { RiHandCoinLine, RiWallet3Line, RiLinkedinFill, RiGithubFill, RiTwitterFill } from "react-icons/ri";
 import { TbLayoutDashboard } from "react-icons/tb";
 import { BsQuestionCircle } from "react-icons/bs";
 import { FaBlog } from "react-icons/fa";
 import { BiSupport } from "react-icons/bi";
 import { MdOutlinePolicy } from "react-icons/md";
 
+// team-members images import
+import member1 from "../Images/mofi.jpg";
+import member2 from "../Images/rajesh.jpg";
+import member3 from "../Images/abhi.jpg";
 
 // sidebar links
 export const SidebarData = [
@@ -47,7 +51,44 @@ export const SidebarData = [
 ];
 
 
-// Dummy text
+// Core Team member
+export const Members = [
+  {
+    img: member1,
+    name: "Mofijul Haque",
+    title : 'Team Leader',
+    linkedin: "https://www.linkedin.com/in/mofijul-haque-359941230/",
+    icon1: <RiLinkedinFill />,
+    github: "https://github.com/MOFIJULHAQUE",
+    icon2: <RiGithubFill />,
+    twitter: "https://twitter.com/Mofijul71136321",
+    icon3: <RiTwitterFill />,
+  },
+  {
+    img: member2,
+    name: "Rajesh Saini",
+    title : 'Team Member',
+    linkedin: "https://www.linkedin.com/in/mofijul-haque-359941230/",
+    icon1: <RiLinkedinFill />,
+    github: "https://github.com/MOFIJULHAQUE",
+    icon2: <RiGithubFill />,
+    twitter: "https://twitter.com/Mofijul71136321",
+    icon3: <RiTwitterFill />,
+  },
+  {
+    img: member3,
+    name: "Abhishek Kolapkar",
+    title : 'Team Member',
+    linkedin: "https://www.linkedin.com/in/abhi-kolapkar",
+    icon1: <RiLinkedinFill />,
+    github: "https://github.com/Pro-Abhi",
+    icon2: <RiGithubFill />,
+    twitter: "https://twitter.com/Mofijul71136321",
+    icon3: <RiTwitterFill />,
+  },
+];
+
+// Policy text
 export const PolicyText = () => {
   return (
     <>
