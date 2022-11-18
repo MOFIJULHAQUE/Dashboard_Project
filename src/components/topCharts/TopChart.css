@@ -1,0 +1,26 @@
+.top_buySell_container {
+  display: flex;
+  justify-content: space-between;
+  gap:10px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+.current_balance {
+  width: 250px;
+  height: 110px;
+  border-radius: 5px;
+  background-color: blueviolet;
+}
+.top_buy {
+  width: 170px;
+  height: 110px;
+  border-radius: 5px;
+  background-color: rgb(27, 151, 204);
+}
+.top_sell {
+  width: 170px;
+  height: 110px;
+  border-radius: 5px;
+  background-color: red;
+}
