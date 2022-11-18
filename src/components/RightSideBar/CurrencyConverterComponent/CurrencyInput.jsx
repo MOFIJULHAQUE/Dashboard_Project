@@ -1,4 +1,3 @@
-// import PropTypes from "prop-types";
 import "./currencyInput.css";
 
 const CurrencyInput=({
@@ -11,12 +10,10 @@ const CurrencyInput=({
   onCurrencyChange,
 }) =>{
   const handleAmountChange = (e) => {
-    // e.target.value;
     setAmount(e.target.value);
   };
 
   const handleCurrencyChange = (e) => {
-    // e.target.value;
     setCurrency(e.target.value);
   };
 
@@ -34,13 +31,5 @@ const CurrencyInput=({
     </div>
   );
 }
-
-// CurrencyInput.propTypes = {
-//   amount: PropTypes.number.isRequired,
-//   currency: PropTypes.string.isRequired,
-//   currencies: PropTypes.array,
-//   onAmountChange: PropTypes.func,
-//   onCurrencyChange: PropTypes.func,
-// };
 
 export default CurrencyInput;

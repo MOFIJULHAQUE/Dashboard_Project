@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { Button, Form, Input } from "antd";
 
 import "./loginSignup.css";
@@ -7,13 +6,13 @@ import "./loginSignup.css";
 // Ant deign
 const MainLoginSignup = () => {
   const onFinish = (values) => {
-    console.log("Success:", values);
+    // console.log("Success:", values);
   };
   const onFinishFailed = (errorInfo) => {
-    console.log("Failed:", errorInfo);
+    // console.log("Failed:", errorInfo);
   };
 
-  // ---------------------------------------
+  
   const [inputValue, setInputValue] = useState({
     name: "",
     email: "",
@@ -23,14 +22,10 @@ const MainLoginSignup = () => {
 
   const [data, setData] = useState([]); //this state use in localStorage
 
-  // console.log(inputValue);
-
   // getting Data---------------------------------------onChange---------
   const getData = (e) => {
-    // console.log(e.target.value);
 
     const { value, name } = e.target;
-    // console.log(value, name);
 
     setInputValue(() => {
       return {
@@ -46,8 +41,6 @@ const MainLoginSignup = () => {
   // on
   const addData = (e) => {
     e.preventDefault();
-
-    // console.log(inputValue);
 
     const { name, email, date, password } = inputValue;
 

@@ -21,7 +21,6 @@ const Sidebar = () => {
           <div className="nav-menu">
             <div className="links">
               {SidebarData.map(({ path, icon, title }, index) => {
-                // const { title } = item;
                 return (
                   <NavLink
                     to={path}
