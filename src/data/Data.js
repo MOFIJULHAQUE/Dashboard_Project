@@ -1,5 +1,11 @@
 // sidebar icons
-import { RiHandCoinLine, RiWallet3Line, RiLinkedinFill, RiGithubFill, RiTwitterFill } from "react-icons/ri";
+import {
+  RiHandCoinLine,
+  RiWallet3Line,
+  RiLinkedinFill,
+  RiGithubFill,
+  RiTwitterFill,
+} from "react-icons/ri";
 import { TbLayoutDashboard } from "react-icons/tb";
 import { BsQuestionCircle } from "react-icons/bs";
 import { FaBlog } from "react-icons/fa";
@@ -7,9 +13,9 @@ import { BiSupport } from "react-icons/bi";
 import { MdOutlinePolicy } from "react-icons/md";
 
 // team-members images import
-import member1 from "../Images/mofi.jpg";
-import member2 from "../Images/rajesh.jpg";
-import member3 from "../Images/abhi.jpg";
+import member1 from "../Assets/Images/mofi.jpg";
+import member2 from "../Assets/Images/Rajesh1.jpeg";
+import member3 from "../Assets/Images/abhi.jpg";
 
 // sidebar links
 export const SidebarData = [
@@ -50,13 +56,12 @@ export const SidebarData = [
   },
 ];
 
-
 // Core Team member
 export const Members = [
   {
     img: member1,
     name: "Mofijul Haque",
-    title : 'Team Leader',
+    title: "Team Leader",
     linkedin: "https://www.linkedin.com/in/mofijul-haque-359941230/",
     icon1: <RiLinkedinFill />,
     github: "https://github.com/MOFIJULHAQUE",
@@ -67,10 +72,10 @@ export const Members = [
   {
     img: member2,
     name: "Rajesh Saini",
-    title : 'Team Member',
-    linkedin: "https://www.linkedin.com/in/mofijul-haque-359941230/",
+    title: "Team Member",
+    linkedin: "https://www.linkedin.com/in/rajesh-saini9485//",
     icon1: <RiLinkedinFill />,
-    github: "https://github.com/MOFIJULHAQUE",
+    github: "https://github.com/saini9485",
     icon2: <RiGithubFill />,
     twitter: "https://twitter.com/Mofijul71136321",
     icon3: <RiTwitterFill />,
@@ -78,7 +83,7 @@ export const Members = [
   {
     img: member3,
     name: "Abhishek Kolapkar",
-    title : 'Team Member',
+    title: "Team Member",
     linkedin: "https://www.linkedin.com/in/abhi-kolapkar",
     icon1: <RiLinkedinFill />,
     github: "https://github.com/Pro-Abhi",

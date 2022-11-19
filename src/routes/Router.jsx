@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Crypto } from "../components/ExploreCoins/Crypto";
+import {Crypto} from "../components/ExploreCoins/Crypto"
 import Blog from "../pages/Blog"
 import Dashboard from "../pages/Dashboard";
 import FAQ from "../pages/Faq";
@@ -7,7 +7,6 @@ import Policy from "../pages/Policy";
 import Support from "../pages/Support";
 import Team from "../pages/Team";
 import Wallet from "../pages/Wallet";
-
 const Router = () => {
   return (
     <Routes>

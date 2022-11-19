@@ -3,9 +3,7 @@ import axios from "axios";
 import { NavLink } from "react-router-dom";
 
 import { TopCoinsData } from "./TopCoinsData";
-import img3 from '../../Assets/Coins2.jpg'
-
-// import './TopCoins.css'
+import img3 from "../../Assets/Coins2.jpg";
 
 export function TopCoins() {
   const [topCoin, setTopCoin] = useState([]);
@@ -27,19 +25,21 @@ export function TopCoins() {
     <div className="top_coin_card">
       {loading ? (
         <h1 className="Loader">
-          <i className="fa fa-refresh fa-spin"></i>Loading...
+          <i className="fa fa-refresh fa-spin"></i>
         </h1>
       ) : (
         topCoin.map(
-          ({
-            image,
-            symbol,
-            price_change_percentage_24h,
-            price_change_24h,
-            total_volume,
-            current_price,
-            
-          },i) => {
+          (
+            {
+              image,
+              symbol,
+              price_change_percentage_24h,
+              price_change_24h,
+              total_volume,
+              current_price,
+            },
+            i
+          ) => {
             if (i < 3) {
               return (
                 <>
@@ -59,10 +59,10 @@ export function TopCoins() {
       )}
       <div className="all_coins coin_box">
         <img className="all_coins_logo" src={img3} alt="coins" />
-        <h3 className="ExploreCoin">Crypto Exchange</h3>
-        <p className="ExploreCoin">
-          Trusted by millions, fees and fast traders
-        </p>
+        <div className="ExploreCoin">
+          <h3>Crypto Exchange</h3>
+          <p>Trusted by millions, fees and fast traders</p>
+        </div>
         <div className="explore_coins_btn">
           <NavLink to="/coins" className="ExploreCoins">
             Explore Coins

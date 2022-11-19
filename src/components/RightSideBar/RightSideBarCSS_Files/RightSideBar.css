@@ -3,8 +3,7 @@
   height: 100%;
   padding: 0.5rem 1rem;
   background: #eefde0;
-  position: fixed;
-  right: 0;
+  overflow: hidden;
 }
 
 .header_part, .Total_balance_section, .Converter_section, .comment_section_screen{
