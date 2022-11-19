@@ -1,9 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 import img1 from '../../Assets/LossChart.png'
 import img2 from '../../Assets/HighChart2.png'
-import img3 from '../../Assets/Coins2.jpg'
 
 import "./TopCoins.css";
 
@@ -65,18 +63,6 @@ export function TopCoinsData({
               <p className="Price comman">${current_price.toLocaleString()}</p>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="all_coins coin_box">
-        <img className="all_coins_logo" src={img3} alt="coins" />
-        <h3 className="ExploreCoin">Crypto Exchange</h3>
-        <p className="ExploreCoin">
-          Trusted by millions, fees and fast traders
-        </p>
-        <div className="explore_coins_btn">
-          <NavLink to="/coins" className="ExploreCoins">
-            Explore Coins
-          </NavLink>
         </div>
       </div>
     </>

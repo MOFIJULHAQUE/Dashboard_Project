@@ -3,7 +3,7 @@
   margin: 2rem 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   gap: 10px;
 }
 
@@ -67,15 +67,9 @@
 }
 
 
-
-
-
-
-
-
 /* explore-coins box */
-.all_coins {
-  background-color: white;
+.all_coins{
+  background: #f7fcfb;
 }
 
 .all_coins_logo {

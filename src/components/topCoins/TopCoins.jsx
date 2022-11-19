@@ -3,7 +3,7 @@ import axios from "axios";
 import { NavLink } from "react-router-dom";
 
 import { TopCoinsData } from "./TopCoinsData";
-// import img3 from '../../Assets/Coins2.jpg'
+import img3 from '../../Assets/Coins2.jpg'
 
 // import './TopCoins.css'
 
@@ -57,7 +57,7 @@ export function TopCoins() {
           }
         )
       )}
-      {/* <div className="all_coins coin_box">
+      <div className="all_coins coin_box">
         <img className="all_coins_logo" src={img3} alt="coins" />
         <h3 className="ExploreCoin">Crypto Exchange</h3>
         <p className="ExploreCoin">
@@ -68,7 +68,7 @@ export function TopCoins() {
             Explore Coins
           </NavLink>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
