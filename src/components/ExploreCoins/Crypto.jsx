@@ -43,13 +43,13 @@ export function Crypto() {
             </button>
           </form>
         </div>
-        <div className="explore_coins_header">
-          <h3>NAME</h3>
-          <h3>SYMBOL</h3>
-          <h3>PRICE</h3>
-          <h3>VOLUM</h3>
-          <h3>24H CHANCE</h3>
-          <h3>M. CAP</h3>
+        <div className="explore_coins_header" >
+          <h3 className="header_text" >NAME</h3>
+          <h3 className="header_text">SYMBOL</h3>
+          <h3 className="header_text">PRICE</h3>
+          <h3 className="header_text">VOLUM</h3>
+          <h3 className="header_text">24H CHANCE</h3>
+          <h3 className="header_text">M. CAP</h3>
         </div>
         {filteredCoins.map(
           ({

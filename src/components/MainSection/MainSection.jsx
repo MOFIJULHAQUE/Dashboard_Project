@@ -3,6 +3,7 @@ import { MainChart } from "../mainChart/MainChart";
 import { TopChart } from "../topCharts/TopChart";
 import { TopCoins } from "../topCoins/TopCoins";
 
+
 import "./MainSection.css";
 
 export function MainSection() {
