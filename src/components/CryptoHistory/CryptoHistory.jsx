@@ -37,7 +37,7 @@ export function CryptoHistory() {
           <h4>Conversation</h4>
         </NavLink>
         <NavLink
-          to="/coins"
+          to="/historyChart"
           id="links"
           className={({ isActive }) =>
             isActive ? "active-link" : "not-active"
@@ -80,7 +80,7 @@ export function CryptoHistory() {
           <h4>1W</h4>
         </NavLink>
         <NavLink
-          to="/coins"
+          to="/monthly"
           id="links"
           className={({ isActive }) =>
             isActive ? "active-link" : "not-active"

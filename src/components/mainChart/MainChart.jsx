@@ -29,7 +29,7 @@ const CustomizedAxisTick = ({ x, y, payload }) => {
         dy={16}
         textAnchor="end"
         fill="#666"
-        transform="rotate(-35)"
+        transform="rotate(-40)"
       >
         {payload.value}
       </text>
@@ -44,11 +44,9 @@ export function MainChart() {
       current_price: "",
       high_24h: "",
       low_24h: "",
-      close: 536,
     },
   ]);
 
-  
   useEffect(() => {
     const MainChartData = async () => {
       await axios
@@ -60,7 +58,6 @@ export function MainChart() {
       
         });
     };
-
     MainChartData();
   }, []);
 
@@ -82,7 +79,7 @@ export function MainChart() {
           <XAxis dataKey="symbol" height={60} tick={<CustomizedAxisTick />} />
           
           <YAxis />
-          <Tooltip />
+          <Tooltip border-radius ={10}/>
           <Legend />
           <Line type="monotone" dataKey="current_price" stroke="#0000FF">
             <LabelList content={<CustomizedLabel />} />

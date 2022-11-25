@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { SearchOutlined } from "@ant-design/icons"
+import React, { useState, useEffect } from "react";
 
 import Coin from "./Coin";
 
@@ -9,6 +9,7 @@ import "./Crypto.css";
 export function Crypto() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
+   const [lightDark , setLightDark] = useState(true)
   useEffect(() => {
     axios
       .get(
@@ -29,8 +30,10 @@ export function Crypto() {
 
   return (
     <>
-      <div className="coins_container">
-        <div className="coin-search">
+      <div className="coins_container" >
+        <div className={lightDark ? "white" : "dark"}>
+          <div className="coin-search-container">
+        <div className="coin-search" >
           <form>
             <input
               className="coin-input"
@@ -42,6 +45,21 @@ export function Crypto() {
               <SearchOutlined />
             </button>
           </form>
+        </div>
+        <div className="top-toggle">
+          {lightDark ? (
+            <i
+              class="fa-solid fa-moon mo" 
+              onClick={() => setLightDark(!lightDark)}
+            ></i>
+          ) : (
+            <i
+              class="fa-solid fa-sun su" style = {{"color":"lightcoral"}}
+              onClick={() => setLightDark(!lightDark)}
+            ></i>
+          )}
+        </div>
+        
         </div>
         <div className="explore_coins_header" >
           <h3 className="header_text" >NAME</h3>
@@ -76,6 +94,7 @@ export function Crypto() {
             );
           }
         )}
+        </div>
       </div>
     </>
   );
