@@ -8,6 +8,10 @@
   gap: 20px;
 }
 
+.m-5{
+  margin-bottom: 5rem;
+}
+
 .Loader,.fa-refresh{
   display: block;
   margin: auto;

@@ -1,44 +1,37 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { RiHandCoinLine, RiMenuUnfoldLine } from "react-icons/ri";
+import { RiHandCoinLine } from "react-icons/ri";
+import { BiDotsVerticalRounded } from "react-icons/bi";
+import { AiOutlineMenuUnfold } from "react-icons/ai";
 
-import { SidebarData } from "../../data/Data";
-
+import Sidebar from "../sidebar/Sidebar";
+import { RightSideBar } from "../RightSideBar/RightSideBar";
 import { NotificationTheme } from "../RightSideBar/NotificationTheme";
 import { ProfileSection } from "../RightSideBar/ProfileSection";
 
 import "./Header.css";
 
 const Header = () => {
-  const [sidebar, setSidebar] = useState(false);
+  const [leftSidebar, setLeftSidebar] = useState(false);
+  const [rightSidebar, setRightSidebar] = useState(false);
 
-  const showSidebar = () => setSidebar(!sidebar);
+  const showSidebar = () => setLeftSidebar(!leftSidebar);
+
+  const showRightSidebar = () => setRightSidebar(!rightSidebar)
 
   return (
     <>
       <div className="header-screen">
         <div className="left-side">
-          <div className="menu-icon">
-            <RiMenuUnfoldLine />
-          </div>
-
-          <div className="nav-menu">
-            <div className="links">
-              {SidebarData.map(({ path, icon, title }, index) => {
-                return (
-                  <NavLink
-                    to={path}
-                    key={index}
-                    className={(navClass) =>
-                      navClass.isActive ? "menuItem active" : "menuItem"
-                    }
-                  >
-                    {icon}
-                    <span>{title}</span>
-                  </NavLink>
-                );
-              })}
+          <div className="menu-bars">
+            <div>
+              <AiOutlineMenuUnfold onClick={showSidebar} />
             </div>
+          </div>
+          <div className="logo">
+            <RiHandCoinLine />
+            <span className="logo-text">
+              Crypto<span>Trade</span>
+            </span>
           </div>
         </div>
 
@@ -46,8 +39,17 @@ const Header = () => {
           <div className="header_part">
             <NotificationTheme />
             <ProfileSection />
+            <BiDotsVerticalRounded onClick={showRightSidebar}/>
           </div>
         </div>
+      </div>
+
+      <div className={leftSidebar ? "nav-menu-bar show" : "nav-menu-bar"}>
+        <Sidebar />
+      </div>
+
+      <div className={rightSidebar ? "right-side-bar show" : "right-side-bar"}>
+        <RightSideBar />
       </div>
     </>
   );

@@ -22,7 +22,7 @@ export function TopCoins() {
   }, []);
 
   return (
-    <div className="top_coin_card">
+    <div className="top_coin_card m-5">
       {loading ? (
         <h1 className="Loader">
           <i className="fa fa-refresh fa-spin"></i>

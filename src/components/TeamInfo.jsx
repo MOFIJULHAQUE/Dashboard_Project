@@ -1,5 +1,6 @@
 import React from "react";
 
+import {NavLink} from "react-router-dom"
 import { Members } from "../data/Data";
 
 import "../styles/Team.css";
@@ -39,7 +40,11 @@ const TeamInfo = () => {
             }
           )}
         </div>
-      </div>
+      </div >
+      <div className="customer_support">
+      <h2>We are here to help! Speak to out 24/7 Customer Support Team Anytime!</h2>
+     <NavLink to="/support"><button className="customer_support_btn"> Connect Now</button></NavLink> 
+    </div>
     </>
   );
 };

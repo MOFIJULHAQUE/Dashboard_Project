@@ -108,3 +108,24 @@
   font-size: 1.5rem;
   color: #598cbc;
 }
+.customer_support{
+  height: 50px;
+  width: 100%;
+  background-color: #8dbce8;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+   display: flex
+   
+}
+.customer_support_btn{
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: rgb(65, 65, 230);
+  color: white;
+  width: 120px;
+  height: 40px;
+  font-weight: bolder;
+  cursor: pointer;
+}

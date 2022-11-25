@@ -1,3 +1,6 @@
+import axios from "axios";
+import { useState, useEffect } from "react";
+
 import {
   LineChart,
   Line,
@@ -7,46 +10,10 @@ import {
   Tooltip,
   Legend,
   LabelList,
+  ResponsiveContainer,
 } from "recharts";
 
-const data = [
-  {
-    name: "Jan",
-    BTC: 4000,
-    ETH: 2400,
-  },
-  {
-    name: "Feb",
-    ETH: 3000,
-    BTC: 1398,
-  },
-  {
-    name: "Mar",
-    ETH: 2000,
-    BTC: 9800,
-  },
-  {
-    name: "Apr",
-    ETH: 2780,
-    BTC: 3708,
-  },
-  {
-    name: "May",
-    ETH: 1890,
-    BTC: 6000,
-  },
-  {
-    name: "June",
-    ETH: 2390,
-    BTC: 3800,
-  },
-  {
-    name: "July",
-    ETH: 5590,
-    BTC: 4300,
-  },
-];
-// it is not constant data
+import './MainChart.css'
 
 const CustomizedLabel = ({ x, y, stroke, value }) => {
   return (
@@ -74,27 +41,58 @@ const CustomizedAxisTick = ({ x, y, payload }) => {
 };
 
 export function MainChart() {
+  const [obj, setObj] = useState([
+    {
+      symbol: "",
+      current_price: "",
+      high_24h: "",
+      low_24h: "",
+      close: 536,
+    },
+  ]);
+
+  useEffect(() => {
+    const MainChartData = async () => {
+      await axios
+        .get(
+          "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=false"
+        )
+        .then((res) => {
+          setObj(res.data);
+        });
+    };
+
+    MainChartData();
+  }, []);
+
   return (
-    <div className="main_chart_container">
-      <LineChart
-        width={800}
-        height={330}
-        data={data}
-        margin={{
-          top: 20,
-          bottom: 10,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" height={60} tick={<CustomizedAxisTick />} />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Line type="monotone" dataKey="ETH" stroke="#8884d8">
-          <LabelList content={<CustomizedLabel />} />
-        </Line>
-        <Line type="monotone" dataKey="BTC" stroke="#82ca9d" />
-      </LineChart>
-    </div>
+    <>
+      <div className="main_chart_container">
+      <ResponsiveContainer>
+        <LineChart
+          // width={750}
+          // height={330}
+          data={obj}
+          margin={{
+            top: 20,
+            bottom: 10,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="symbol" height={60} tick={<CustomizedAxisTick />} />
+
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Line type="monotone" dataKey="current_price" stroke="#0000FF">
+            <LabelList content={<CustomizedLabel />} />
+          </Line>
+          <Line type="monotone" dataKey="high_24h" stroke="#82ca9d" />
+          <Line type="monotone" dataKey="low_24h" stroke="#FF0000" />
+          <Line type="monotone" dataKey="close" stroke="#FF0000" />
+        </LineChart>
+      </ResponsiveContainer>
+      </div>
+    </>
   );
 }

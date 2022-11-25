@@ -1,5 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import {Crypto} from "../components/ExploreCoins/Crypto"
+import { Investment } from "../components/investmentPlane/Investment";
+import { MainChart } from "../components/mainChart/MainChart";
 import Blog from "../pages/Blog"
 import Dashboard from "../pages/Dashboard";
 import FAQ from "../pages/Faq";
@@ -19,7 +21,10 @@ const Router = () => {
       <Route path="/support" element={<Support />} />
       <Route path="/policy" element={<Policy />} />
       <Route path="/coins" element={<Crypto />}/>
+      <Route path ="/mainChart" element = {<MainChart />}/>
+       <Route path ="/investment" element = {<Investment />}/>
     </Routes>
+    
   );
 };
 

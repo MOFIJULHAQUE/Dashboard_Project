@@ -10,9 +10,9 @@ const Layout = () => {
   return (
     <>
       <div className="dashboard-layout">
-        {/* <div className="header">
+        <div className="header">
           <Header />
-        </div> */}
+        </div>
         <div className="sidebar-menu">
           <Sidebar />
         </div>
