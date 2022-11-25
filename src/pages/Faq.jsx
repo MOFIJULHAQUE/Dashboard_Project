@@ -8,7 +8,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import "../styles/faq.css";
 
-import MainLoginSignUp from "../components/Login_signUp/MainLoginSignUp";
+// import MainLoginSignUp from "../components/Login_signUp/MainLoginSignUp";
 
 const Faq = () => {
   const [expanded, setExpanded] = useState("panel1");
@@ -203,9 +203,9 @@ const Faq = () => {
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <MainLoginSignUp />
-      </div>
+      </div> */}
     </>
   );
 };

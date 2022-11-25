@@ -1,16 +1,18 @@
 .Right_sidebar_section {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   padding: 0.5rem 1rem;
   background: #eefde0;
+  position: fixed;
+  right: 0;
 }
 
 .header_part, .Total_balance_section, .Converter_section, .comment_section_screen{
-  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .header_part {
-  width: 100%;
   padding: 8px 16px;
   display: flex;
   align-items: center;
