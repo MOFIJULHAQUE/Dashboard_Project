@@ -1,0 +1,18 @@
+.header-screen{
+  width: 100%;
+  height: 60px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-screen .left-side{
+  /* display: flex;
+  align-items: center;
+  gap: 30px; */
+}
+
+.header-screen .left-side .menu-icon svg{
+  font-size: 1.5rem;
+}

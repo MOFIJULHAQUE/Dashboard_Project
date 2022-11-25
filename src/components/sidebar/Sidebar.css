@@ -149,78 +149,17 @@
 
 
 /*************** responsiveness CSS ***************/
-/* @media screen and (max-width: 1200px) {
-  .sidebar {
-    position: fixed;
-    height: 100%;
-    z-index: 9;
-    background: #fafafa;
-  }
-  .menuItem > span {
-    display: block;
+@media screen and (max-width: 1300px) {
+  .logo{
+    visibility: hidden;
   }
 
-  .menuItem {
-    margin: 1rem 0;
-  }
-
-  .menuItem svg {
-    color: #333333;
-    font-size: 1.8rem;
-  }
-
-  .active svg {
-    color: #ffffff;
-  }
-
-  .menu-bars {
-    display: flex;
-    position: fixed;
-    top: 1rem;
-    background: #ffe0e0;
-    padding: 10px;
-    border-radius: 10px;
-    z-index: 9;
-  }
-
-  .menu-bars svg {
-    font-size: 1.2rem;
-  }
-
-  .info-card {
-    display: none;
-  }
-} */
-
-/* @media screen and (max-width: 768px) {
-  .sidebar {
-    position: fixed;
-    z-index: 9;
-    background: #fafafa;
-    width: 100px;
-    height: 100%;
-  }
-
-  .menuItem > span {
+  .menuItem > span{
     display: none;
   }
 
-  .logo {
+
+  .help-box{
     display: none;
   }
-
-  .menu-bars {
-    display: flex;
-    position: fixed;
-    top: 1rem;
-    left: 22%;
-    background: #ffe0e0;
-    padding: 10px;
-    border-radius: 10px;
-    z-index: 9;
-  }
-
-  .menu-bars svg {
-    font-size: 1.2rem;
-  }
-} */
+}

@@ -4,6 +4,10 @@
   overflow-y: auto;
 }
 
+.dashboard-layout .header{
+  /* display: none; */
+}
+
 .sidebar-menu{
   width: 260px;
   height: 100%;
@@ -16,10 +20,15 @@
   height: 100%;
 }
 
-/* @media screen and (max-width : 1200px) {
-  .content{
-    margin-left: 0;
-    max-width: 100%;
+@media screen and (max-width : 1300px) {
+  .sidebar-menu{
+    width: 100px;
   }
-} */
+
+  .content{
+    margin-left: 100px;
+    max-width: 100%;
+    border: 2px solid red;
+  }
+}
 

@@ -77,7 +77,7 @@ export function MainChart() {
   return (
     <div className="main_chart_container">
       <LineChart
-        width={750}
+        width={800}
         height={330}
         data={data}
         margin={{
