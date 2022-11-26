@@ -1,9 +1,9 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Crypto } from "../components/exploreCoins/Crypto";
-import { HistoryChart } from "../components/histroryChart/HistoryChart";
+import {Crypto} from "../components/exploreCoins/Crypto"
 import { Investment } from "../components/investmentPlane/Investment";
 import { MainChart } from "../components/mainChart/MainChart";
 import { MonthlyChart } from "../components/monthlyChart/MonthlyChart";
+import {HistoryChart} from "../components/histroryChart/HistoryChart"
 
 import Blog from "../pages/Blog";
 import Dashboard from "../pages/Dashboard";
@@ -26,13 +26,16 @@ const Router = () => {
       <Route path="/team" element={<Team />} />
       <Route path="/support" element={<Support />} />
       <Route path="/policy" element={<Policy />} />
+      <Route path="/coins" element={<Crypto />}/>
+      <Route path ="/mainChart" element = {<MainChart />}/>
+       <Route path ="/investment" element = {<Investment />}/>
       <Route path="/coins" element={<Crypto />} />
       <Route path="/mainChart" element={<MainChart />} />
       <Route path="/investment" element={<Investment />} />
-      <Route path="/historyChart" element={<HistoryChart />} />
+      <Route path="/historyChart" element={<HistoryChart/>} />
     <Route path = "/monthly" element ={<MonthlyChart />} />
-    </Routes>
-  );
+    </Routes> 
+  )
 };
 
 export default Router;

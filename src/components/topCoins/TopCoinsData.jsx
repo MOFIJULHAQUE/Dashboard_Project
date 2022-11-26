@@ -1,9 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 import img1 from '../../Assets/LossChart1.png'
 import img2 from '../../Assets/HighChart2.png'
-// import img3 from '../../Assets/Coins2.jpg'
 
 import "./TopCoins.css";
 
@@ -24,7 +22,7 @@ export function TopCoinsData({
             <div className="coin_symbol">
               <p className="coins_symbol">{symbol.toUpperCase()}/USD</p>
               {price_change_percentage_24h < 0 ? (
-                <p className="coin-percent red  coins_symbol">
+                <p className="coin-percent red coins_symbol">
                   {price_change_percentage_24h.toFixed(2)}%
                 </p>
               ) : (

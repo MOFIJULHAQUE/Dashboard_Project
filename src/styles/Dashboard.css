@@ -2,15 +2,29 @@
   max-width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: auto 22vw;
+  grid-template-columns: auto 25%;
 }
 
 .main__dash, .right_sidebar{
   max-width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
-.right_sidebar{
-  /* position: fixed;
-  right: 0; */
+
+@media screen and (max-width: 1024px) {
+  .content__screen{
+    max-width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .main__dash{
+    width: 100%;
+  }
+
+  .right_sidebar{
+    display: none;
+  }
 }

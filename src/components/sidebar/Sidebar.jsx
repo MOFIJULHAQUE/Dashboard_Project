@@ -10,14 +10,6 @@ const Sidebar = () => {
   return (
     <>
       <div className="sidebar">
-        <div>
-          <div className="logo">
-            <RiHandCoinLine />
-            <span className="logo-text">
-              Crypto<span>Trade</span>
-            </span>
-          </div>
-
           <div className="nav-menu">
             <div className="links">
               {SidebarData.map(({ path, icon, title }, index) => {
@@ -54,7 +46,6 @@ const Sidebar = () => {
               </div>
             </div>
           </div>
-        </div>
       </div>
     </>
   );

@@ -10,7 +10,10 @@ import {
   Tooltip,
   Legend,
   LabelList,
+  ResponsiveContainer,
 } from "recharts";
+
+import './MainChart.css'
 
 const CustomizedLabel = ({ x, y, stroke, value }) => {
   return (
@@ -49,6 +52,7 @@ export function MainChart() {
     },
   ]);
 
+
   useEffect(() => {
     const MainChartData = async () => {
       await axios
@@ -56,21 +60,19 @@ export function MainChart() {
           "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=true&price_change_percentage=1h%2C%2024h%2C%207d%2C%2014d%2C%2030d%2C%20200d%2C%201y"
         )
         .then((res) => {
-          setObj(res.data) 
-      
+          setObj(res.data);
         });
     };
     MainChartData();
   }, []);
 
- 
-
   return (
     <>
       <div className="main_chart_container">
+      <ResponsiveContainer>
         <LineChart
-          width={750}
-          height={330}
+          // width={750}
+          // height={330}
           data={obj}
           margin={{
             top: 20,
@@ -79,6 +81,7 @@ export function MainChart() {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="symbol" height={60} tick={<CustomizedAxisTick />} />
+
         
           <YAxis />
           <Tooltip border-radius ={10}/>
@@ -91,6 +94,7 @@ export function MainChart() {
           <Line type="monotone" dataKey="low_24h" stroke="#FF0000" />
           <Line type="monotone" dataKey="ath" stroke="#00FF00" />
         </LineChart>
+      </ResponsiveContainer>
       </div>
     </>
   );

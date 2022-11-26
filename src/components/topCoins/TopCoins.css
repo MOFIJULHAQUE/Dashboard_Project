@@ -1,14 +1,18 @@
 .top_coin_card {
   width: 100%;
-  margin: 2rem 0;
+  margin: 1rem 0 2rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  gap: 10px;
+  gap: 20px;
+}
+
+.m-5{
+  margin-bottom: 5rem;
 }
 
 .Loader,.fa-refresh{
-  /* text-align: center; */
   display: block;
   margin: auto;
 }
@@ -46,7 +50,7 @@
 .chart_profit_loss{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 1rem;
 }
 
@@ -56,11 +60,10 @@
 }
 
 .ProfitLoss {
-  width: fit-content;
   padding: 2px 8px;
-  border-radius: 10px;
+  border-radius: 20px;
   font-weight: bold;
-  background:#a4eca2;
+  background: #defff248;
 }
 
 .coin_price .comman{
@@ -68,46 +71,33 @@
 }
 
 
-
-
-
-
-
-
 /* explore-coins box */
-.all_coins {
-  background-color: whitesmoke;
+.all_coins{
+  background: #c7eae3;
 }
 
 .all_coins_logo {
-  width: 50px;
+  width: fit-content;
   height: 50px;
-  border-radius: 40px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .ExploreCoin {
-  margin: 0%;
-  padding: 0%;
+  margin: 4px 0;
   text-align: center;
 }
 
 .ExploreCoins {
-  cursor: pointer;
-  border-radius: 10px;
-  border: 2px solid #c9f1c8;
-  background-color: #a6f2a5;
-  color: black;
-  font-weight: bold;
-  width: 100px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-}
-
-.ExploreCoins:hover {
-  color: black;
+  width: 120px;
+  margin: 5px auto;
+  border-radius: 10px;
+  background-color: #a6f2a5;
+  color: #333333;
+  font-weight: bold;
+  padding: 2px 4px;
+  text-align: center;
+  cursor: pointer;
 }
