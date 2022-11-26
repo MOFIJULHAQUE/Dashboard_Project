@@ -1,7 +1,7 @@
 import React from "react";
 
-import img1 from '../../Assets/LossChart1.png'
-import img2 from '../../Assets/HighChart2.png'
+import img1 from '../../Assets/LossChart1.png';
+import img2 from "../../Assets/HighChart2.png"
 
 import "./TopCoins.css";
 
@@ -65,6 +65,7 @@ export function TopCoinsData({
           </div>
         </div>
       </div>
+      
     </>
   );
 }

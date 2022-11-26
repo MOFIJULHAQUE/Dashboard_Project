@@ -1,12 +1,7 @@
 import React from 'react'
-import WalletScreen from '../components/wallet/WalletScreen'
 
 const Wallet = () => {
   return (
-    <>
-      <WalletScreen />
-    </>
+    <div>Wallet</div>
   )
 }
-
-export default Wallet
