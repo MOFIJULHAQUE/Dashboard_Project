@@ -41,9 +41,11 @@ export function MainChart() {
   const [obj, setObj] = useState([
     {
       symbol: "",
+      last_updated:"",
       current_price: "",
       high_24h: "",
       low_24h: "",
+      ath:""
     },
   ]);
 
@@ -51,7 +53,7 @@ export function MainChart() {
     const MainChartData = async () => {
       await axios
         .get(
-          "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=false"
+          "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=true&price_change_percentage=1h%2C%2024h%2C%207d%2C%2014d%2C%2030d%2C%20200d%2C%201y"
         )
         .then((res) => {
           setObj(res.data) 
@@ -77,16 +79,17 @@ export function MainChart() {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="symbol" height={60} tick={<CustomizedAxisTick />} />
-          
+        
           <YAxis />
           <Tooltip border-radius ={10}/>
           <Legend />
           <Line type="monotone" dataKey="current_price" stroke="#0000FF">
             <LabelList content={<CustomizedLabel />} />
           </Line>
+          {/* <Line type="monotone" dataKey="last_updated" stroke="#82ca9d" /> */}
           <Line type="monotone" dataKey="high_24h" stroke="#82ca9d" />
           <Line type="monotone" dataKey="low_24h" stroke="#FF0000" />
-          <Line type="monotone" dataKey="close" stroke="#FF0000" />
+          <Line type="monotone" dataKey="ath" stroke="#00FF00" />
         </LineChart>
       </div>
     </>

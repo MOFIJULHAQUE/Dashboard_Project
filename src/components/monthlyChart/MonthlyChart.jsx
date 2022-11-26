@@ -13,8 +13,8 @@ import {
 export function MonthlyChart() {
   const [monthlyData, setMonthlyData] = useState([
    {
-     name: "Prices",
-     prices: 6466
+     name: "",
+     price: ""
   }
   ]);
 
@@ -22,11 +22,11 @@ export function MonthlyChart() {
     const monthlyData = async () => {
       await axios
         .get(
-          "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=USD&days=5&interval=daily"
+          "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=true&price_change_percentage=1h%2C%2024h%2C%207d%2C%2014d%2C%2030d%2C%20200d%2C%201y"
         )
         .then((res) => {
-            //console.log("resp",res.data.prices)
-          setMonthlyData([...res.data.prices]);
+           // console.log("res",res.data[0].sparkline_in_7d.price)
+          setMonthlyData([...res.data[0].sparkline_in_7d.price]);
         });
     };
     monthlyData();
@@ -39,7 +39,7 @@ export function MonthlyChart() {
 //      monthlyData.push(item[1]) 
 //   )
 //  })}
- //console.log("monthlyD",monthlyData)
+// console.log("monthlyD",monthlyData)
   return (
     <BarChart
       width={500}
@@ -57,7 +57,7 @@ export function MonthlyChart() {
       <YAxis />
       <Tooltip />
       <Legend />
-      <Bar dataKey="prices" stackId="a" fill="#8884d8" />
+      <Bar dataKey="price" stackId="a" fill="#8884d8" />
       {/* <Bar dataKey="prices" fill="#82ca9d" /> */}
      
     </BarChart>
