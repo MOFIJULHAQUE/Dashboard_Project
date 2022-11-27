@@ -6,6 +6,7 @@ import Coin from "./Coin";
 
 import "./Crypto.css";
 
+
 export function Crypto() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
@@ -59,7 +60,7 @@ export function Crypto() {
             ></i>
           )}
         </div>
-        
+       
         </div>
         <div className="explore_coins_header" >
           <h3 className="header_text" >NAME</h3>

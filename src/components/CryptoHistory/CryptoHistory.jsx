@@ -6,7 +6,7 @@ export function CryptoHistory() {
   return (
     <div className="crypto_history_container">
       <div className="chart_history">
-        {/* <NavLink
+        <NavLink
           to="/mainChart"
           id="links"
           className={({ isActive }) =>
@@ -15,7 +15,7 @@ export function CryptoHistory() {
           end
         >
           <h4>Chart</h4>
-        </NavLink> */}
+        </NavLink>
         <NavLink
           to="/investment"
           id="links"
@@ -70,7 +70,7 @@ export function CryptoHistory() {
           <h4>24H</h4>
         </NavLink>
         <NavLink
-          to="/coins"
+          to="/mainChart"
           id="links"
           className={({ isActive }) =>
             isActive ? "active-link" : "not-active"

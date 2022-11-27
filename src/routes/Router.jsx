@@ -11,6 +11,7 @@ import Policy from "../pages/Policy";
 import Support from "../pages/Support";
 import Team from "../pages/Team";
 import Login from ".././components/Login_signUp/Login";
+
 const Router = () => {
   return (
     <Routes>
@@ -28,9 +29,10 @@ const Router = () => {
       <Route path="/mainChart" element={<MainChart />} />
       <Route path="/investment" element={<Investment />} />
       <Route path="/mainChart" element={<MainChart />} />
-      <Route path="/historyChart" element={<HistoryChart />} />
-      <Route path="/monthly" element={<MonthlyChart />} />
+      <Route path="/historyChart" element={<HistoryChart/>} />
+      <Route path = "/monthly" element ={<MonthlyChart />} />
       <Route path="/login" element={<Login />} />
+      
     </Routes>
   );
 };
