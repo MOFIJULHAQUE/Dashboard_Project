@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
 
+
 import { TopCoinsData } from "./TopCoinsData";
-import img3 from "../../Assets/Coins2.jpg";
+import img3 from '../../Assets/Coins2.jpg'
+
+// import './TopCoins.css'
 
 export function TopCoins() {
   const [topCoin, setTopCoin] = useState([]);

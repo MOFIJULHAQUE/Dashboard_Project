@@ -1,6 +1,7 @@
 // import React from "react";
 import React, { useState } from "react";
 import { Col, InputNumber, Row, Slider } from "antd";
+
 import SIPG from "../../Assets/sip-growth-graph.jpg";
 
 import "./Investment.css";

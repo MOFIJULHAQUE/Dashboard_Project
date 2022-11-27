@@ -1,35 +1,46 @@
-import "./currencyInput.css";
+import React from "react";
+import {Select} from "antd"
 
-const CurrencyInput=({
-  amount,
-  setAmount,
-  currency,
-  setCurrency,
-  currencies,
-  amountChange,
-  onCurrencyChange,
-}) =>{
-  const handleAmountChange = (e) => {
-    setAmount(e.target.value);
-  };
+import "./currencyInput.css"
 
-  const handleCurrencyChange = (e) => {
-    setCurrency(e.target.value);
-  };
-
+function CurrencyOptions({
+  prop,
+  fromCurrency,
+  toCurrency,
+  currencyOptions,
+  updateCurrency,
+}) {
+  const options = currencyOptions.map((data, index) => {
+    return (
+      <option key={index} value={data}>
+        {data}
+      </option>
+    );
+  });
   return (
-    <div className="group">
-      <input type="text" value={amount} onChange={handleAmountChange} />
-      <select
-        value={currency}
-        onChange={ handleCurrencyChange}
-      >
-        {currencies.map((currency) => (
-          <option value={currency}>{currency}</option>
-        ))}
-      </select>
-    </div>
+    <>
+      {prop === "From currency" ? (
+        <select
+          autoFocus="false"
+          name="currency"
+          className={prop}
+          value={fromCurrency}
+          onChange={updateCurrency}
+        >
+          {options}
+        </select>
+      ) : prop === "To currency" ? (
+        <select
+          name="currency"
+          className={prop}
+          value={toCurrency}
+          onChange={updateCurrency}
+        >
+          {options}
+        </select>
+      ) : null}
+    </>
   );
 }
 
-export default CurrencyInput;
+export default CurrencyOptions;
