@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 
+import "./MainChartN.css"
+
 import {
   BarChart,
   Bar,

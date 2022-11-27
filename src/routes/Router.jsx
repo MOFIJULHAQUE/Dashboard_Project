@@ -13,7 +13,7 @@ import Support from "../pages/Support";
 import Team from "../pages/Team";
 
 import Login from ".././components/Login_signUp/Login";
-// import Signup from ".././components/Login_signUp/Signup"
+ import Signup from ".././components/Login_signUp/Signup"
 
 const Router = () => {
   return (

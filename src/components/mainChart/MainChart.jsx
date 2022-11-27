@@ -71,8 +71,8 @@ export function MainChart() {
       <div className="main_chart_container">
       <ResponsiveContainer>
         <LineChart
-          // width={750}
-          // height={330}
+           width={750}
+           height={330}
           data={obj}
           margin={{
             top: 20,
