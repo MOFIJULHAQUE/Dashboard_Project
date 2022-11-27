@@ -25,9 +25,9 @@ export const SidebarData = [
     title: "Dashboard",
   },
   {
-    path: "/wallet",
+    path: "/coins",
     icon: <RiWallet3Line />,
-    title: "Wallet",
+    title: "Coins",
   },
   {
     path: "/faq",

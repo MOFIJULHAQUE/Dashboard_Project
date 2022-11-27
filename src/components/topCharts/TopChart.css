@@ -1,21 +1,18 @@
-.top_chart_container {
-  display: flex;
-  justify-content: space-between;
-  gap:10px;
-}
-
 .supply_box{
-  width: 230px;
+  width: 30%;
   height: 110px;
   border-radius: 5px;
   background-color: whitesmoke;
+  text-align: center;
+  /* overflow: hidden; */
 }
 
 .ChartImage{
   width: 30px;
   height: 30px;
   float: left;
-  margin: 10px 10px  10px;
+  margin: 10px 10px 10px;
+  clear: both;
 }
 
 .Supply{
@@ -35,16 +32,30 @@ color: rgb(9, 9, 246);
 }
 
 .circulating_supply{
-  text-align: center;
   background-color: rgb(162, 162, 247);
 }
 
 .total_supply {
-  text-align: center;
   background-color: rgb(189, 243, 225);
 }
 
 .max_supply {
-  text-align: center;
   background-color: rgb(220, 246, 194);
+}
+
+.supply_box .chart, .supply_box svg{
+  width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .supply_box{
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .supply_box{
+    width: 100%;
+  }
 }

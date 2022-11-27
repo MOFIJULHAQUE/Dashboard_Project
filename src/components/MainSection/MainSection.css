@@ -44,3 +44,20 @@
   border-radius: 10px;
   background: rgb(122, 153, 217);
 }
+
+
+
+@media screen and (max-width: 510px) {
+  .main_header{
+    width: 100%;
+    font-size: 0.7rem;
+  }
+  
+  .main_header .Investment .rate{
+    font-size: 1.3rem;
+  }
+
+  .main_header .Investment .profit_loss{
+    font-size: 0.6rem;
+  }
+}
