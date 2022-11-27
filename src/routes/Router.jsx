@@ -13,7 +13,6 @@ import Support from "../pages/Support";
 import Team from "../pages/Team";
 
 import Login from ".././components/Login_signUp/Login";
-import { Wallet } from "@mui/icons-material";
 // import Signup from ".././components/Login_signUp/Signup"
 
 const Router = () => {
@@ -37,9 +36,8 @@ const Router = () => {
        <Route path ="/investment" element = {<Investment />}/>
       <Route path="/mainChart" element={<MainChart />} />
       <Route path="/historyChart" element={<HistoryChart/>} />
-    <Route path = "/monthly" element ={<MonthlyChart />} />
+      <Route path = "/monthly" element ={<MonthlyChart />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/login" element={<Wallet />} />
       
     </Routes>
   );

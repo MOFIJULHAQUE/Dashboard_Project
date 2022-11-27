@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import { CryptoHistory } from "../cryptoHistory/CryptoHistory";
 import { MainChart } from "../mainChart/MainChart";
+import { MainChartN } from "../mainChartN/MainChartN";
+import { OpenClose } from "../openCloseChart/OpenClose";
 import { TopChart } from "../topCharts/TopChart";
 import { TopCoins } from "../topCoins/TopCoins";
 
@@ -38,7 +40,9 @@ export function MainSection() {
         </div>
         <TopChart />
         <CryptoHistory />
-        <MainChart />
+<MainChartN/>
+         {/* <OpenClose/> */}
+         <MainChart/>
         <TopCoins />
       </div>
       </div>
